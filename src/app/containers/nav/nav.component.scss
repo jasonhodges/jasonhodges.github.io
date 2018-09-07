@@ -14,5 +14,8 @@ a.#{$prefix}-nav {
   &-link {
     color: $nav-text-color;
     flex-grow: 1;
+    font: {
+      size: $base-font-size;
+    };
   }
 }

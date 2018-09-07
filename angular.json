@@ -3,11 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-site": {
+    "jasonhodges.github.io": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "ngx-site",
+      "prefix": "jh",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -75,22 +75,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-site:build"
+            "browserTarget": "jasonhodges.github.io:build"
           },
           "configurations": {
             "hmr": {
               "hmr": true,
-              "browserTarget": "ngx-site:build:hmr"
+              "browserTarget": "jasonhodges.github.io:build:hmr"
             },
             "production": {
-              "browserTarget": "ngx-site:build:production"
+              "browserTarget": "jasonhodges.github.io:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-site:build"
+            "browserTarget": "jasonhodges.github.io:build"
           }
         },
         "test": {
@@ -124,7 +124,7 @@
         }
       }
     },
-    "ngx-site-e2e": {
+    "jasonhodges.github.io-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -132,11 +132,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-site:serve"
+            "devServerTarget": "jasonhodges.github.io:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-site:serve:production"
+              "devServerTarget": "jasonhodges.github.io:serve:production"
             }
           }
         },
@@ -152,5 +152,5 @@
       }
     }
   },
-  "defaultProject": "ngx-site"
+  "defaultProject": "jasonhodges.github.io"
 }

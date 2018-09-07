@@ -4,12 +4,14 @@ import { PostResolverService } from '@ngx-site/components/post/post-resolver.ser
 import { PostComponent } from '@ngx-site/components/post/post.component';
 import { AboutComponent } from '@ngx-site/containers/about/about.component';
 import { HomeComponent } from '@ngx-site/containers/home/home.component';
+import { OtherComponent } from '@ngx-site/containers/other/other.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent},
-  { path: 'blog/:urlTitle', component: PostComponent, resolve: {post: PostResolverService} }
+  { path: 'about', component: AboutComponent },
+  { path: 'other', component: OtherComponent },
+  { path: 'blog/:urlTitle', component: PostComponent, resolve: { post: PostResolverService } }
 ];
 
 @NgModule({

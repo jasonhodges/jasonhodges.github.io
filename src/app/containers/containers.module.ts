@@ -8,6 +8,7 @@ import { AboutComponent } from '@ngx-site/containers/about/about.component';
 import { HomeComponent } from '@ngx-site/containers/home/home.component';
 import { SidenavComponent } from '@ngx-site/containers/sidenav/sidenav.component';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { OtherComponent } from './other/other.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,8 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
     HomeComponent,
     SidenavComponent,
     PostComponent,
-    PostsComponent
+    PostsComponent,
+    OtherComponent
   ],
   exports: []
 })
