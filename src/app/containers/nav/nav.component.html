@@ -1,0 +1,10 @@
+<nav mat-tab-nav-bar class="jh-nav mat-elevation-z2">
+  <a mat-tab-link
+     *ngFor="let link of links"
+     (click)="activeLink = link"
+     [active]="activeLink === link"
+     class="jh-nav jh-nav-link"
+     routerLink="{{link}}"
+     routerLinkActive
+     #rla="routerLinkActive">{{link}}</a>
+</nav>

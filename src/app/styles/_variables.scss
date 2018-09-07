@@ -1,0 +1,67 @@
+$prefix: 'jh';
+/*----------------*\
+    $colors
+\*----------------*/
+$white: #fff;
+$brown: #342819;
+$green: #7d9ea3;
+$black: #2b2b2b;
+$greenlt: tint($green, 30%);
+$greendk: shade($green, 30%);
+$grey: #3d403f;
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+$brand-color: $green;
+$text-color: $white;
+$nav-text-color: $green;
+
+$color-primary-1: #424242;
+$color-light-1: #eee;
+$color-shadow: rgba(90, 90, 90, 0.4);
+$text-color: $color-light-1;
+$background-color: $color-primary-1;
+
+/*----------------*\
+    $fonts
+\*----------------*/
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$base-font-family: 'Trirong', serif;
+$headline-font-family: 'Rubik', sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 300;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit: 30px;
+
+/*----------------*\
+    $height & $width
+\*----------------*/
+$height-body: 100vh;
+$height-app: 100%;
+$height-header: 70px;
+$height-footer: 60px;
+$width_content-max: 800px;
+$on-mobile: 600px;
+$on-tablet: 700px;
+$on-laptop: 800px;
+
+
+/*----------------*\
+    $images
+\*----------------*/
+$logo_angular: url('/assets/images/angular.png');
+
+/*----------------*\
+    $padding
+\*----------------*/
+.p_l_2 {
+  padding-left: 2em;
+}
+
+/*----------------*\
+    $margin
+\*----------------*/
+$margin_content: 16px;
