@@ -756,7 +756,7 @@ export class NavComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;nav mat-tab-nav-bar class&#x3D;&quot;jh-nav mat-elevation-z2&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;nav mat-tab-nav-bar class&#x3D;&quot;jh-nav&quot;&gt;
   &lt;a mat-tab-link
      *ngFor&#x3D;&quot;let link of links&quot;
      (click)&#x3D;&quot;activeLink &#x3D; link&quot;
@@ -794,7 +794,7 @@ export class NavComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav mat-tab-nav-bar class="jh-nav mat-elevation-z2">  <a mat-tab-link     *ngFor="let link of links"     (click)="activeLink = link"     [active]="activeLink === link"     class="jh-nav jh-nav-link"     routerLink="{{link}}"     routerLinkActive     #rla="routerLinkActive">{{link}}</a></nav></div>'
+        var COMPONENT_TEMPLATE = '<div><nav mat-tab-nav-bar class="jh-nav">  <a mat-tab-link     *ngFor="let link of links"     (click)="activeLink = link"     [active]="activeLink === link"     class="jh-nav jh-nav-link"     routerLink="{{link}}"     routerLinkActive     #rla="routerLinkActive">{{link}}</a></nav></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'ngx-site-about'},{'name': 'AppComponent', 'selector': 'ngx-site-root'},{'name': 'HeaderComponent', 'selector': 'ngx-site-header'},{'name': 'HomeComponent', 'selector': 'ngx-site-home'},{'name': 'NavComponent', 'selector': 'ngx-site-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'ngx-site-post'},{'name': 'PostsComponent', 'selector': 'ngx-site-posts'},{'name': 'SidenavComponent', 'selector': 'ngx-site-sidenav'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NavComponent'};
