@@ -23,6 +23,12 @@ script:
   - yarn docs
   - yarn docs:copy
 
+env:
+  global:
+  - GITHUB_REPO: "jasonhodges/jasonhodges.github.io"
+  - secure: "Uh7V+w7ySu4Y7mARzKE2D3xTCPjF7t+/PzyT8SzGWl/qh8eYLY695YnIDo7ymv3h3trgWy3Rpb6bkW5e3N0vg2SHWKbPIC8Owi9PmIIOzXFV1PdU5HcLktAMQttc2u2A6dEC7ii1yY3Cvaoh9lBnBigXe33YBTdqpUat+Mn3LNwszN/PnOrb6qnhyiUjZRri5fstoj+lSChM5DJ5PH0Mb1s5w7v4vLhq1g7ZA+YUb6BCI8eG4IZik+Hf0dECO+5WtwDMdh21+p03zYwHhQJvKH4vVaKkXPm6ssuIZNWsB10YpsHceCQOXhuqjBWBvrD4J63Z1yRae+CE5rDkFxhjOzmC4QM46yPSpT58YImreFrKQF/4LImIqdDXYxzXFykvehk/o99U7q4/24p3FFUpuAMDMi7nBEGTcp3s6EgjPq4tnr2+PDYSuz9YDf7EtVRHQhVPWeGVse8uPL+Wa7bsfo4F348UNOE03g02TorTlSdD4WjOFWXGVsG1N2V4q+cq/B10uHNG3ATG2SWlIda1CD3pdLkG3viodWPl6HHbhvvfcC6NcXi2Y+s+lh90NEyxXYhI6FYbiiHpPkRYRg20F6JdaKTd9mCvXQhyJ/Wog5pxBYPw/W+PjPQLCeJFE6p+CXAL8yPrIPuQybfsCxLLPAgpyTeufQz/m4+WOGZ5cZA="
+
+
 deploy:
   provider: pages
   skip_cleanup: true
