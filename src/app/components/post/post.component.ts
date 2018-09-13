@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'ngx-site-post',
+  selector: 'jh-site-post',
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.scss']
 })
