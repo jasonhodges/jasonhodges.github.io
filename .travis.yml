@@ -5,6 +5,7 @@ node_js:
 branches:
   only:
     - master
+
 before_script:
   - yarn global add @angular/cli
 
@@ -16,8 +17,8 @@ cache:
 script:
   - ng lint
   - ng build --prod
-  - docs
-  - docs:copy
+  - yarn docs
+  - yarn docs:copy
 
 deploy:
   provider: pages
