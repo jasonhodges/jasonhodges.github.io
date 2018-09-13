@@ -38,7 +38,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>SidenavComponent</li>
+  <li>OtherComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,11 +61,17 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/containers/sidenav/sidenav.component.ts</code>
+    <code>src/app/containers/other/other.component.ts</code>
 </p>
 
 
 
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
 
 
 <section>
@@ -85,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>jh-site-sidenav</code></td>
+                <td class="col-md-9"><code>jh-other</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>sidenav.component.css</code></td>
+                <td class="col-md-9"><code>other.component.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./sidenav.component.html</code></td>
+                <td class="col-md-9"><code>./other.component.html</code></td>
             </tr>
 
 
@@ -109,21 +115,21 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
+
                 <tr>
                     <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
+                        <h6><b>Methods</b></h6>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#isHandset$">isHandset$</a>
+                                <a href="#ngOnInit">ngOnInit</a>
                             </li>
                         </ul>
                     </td>
                 </tr>
-
 
 
 
@@ -139,42 +145,61 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(breakpointObserver: BreakpointObserver)</code>
+<code>constructor()</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/containers/sidenav/sidenav.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/containers/other/other.component.ts:8</a></div>
                             </td>
                         </tr>
 
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
                 <tr>
                     <td class="col-md-4">
-                            <div>
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>breakpointObserver</td>
-                                                  
-                                                        <td>
-                                                                    <code>BreakpointObserver</code>
-                                                        </td>
-                                                  
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                </tr>
-                                        </tbody>
-                                    </table>
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/containers/other/other.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
                             </div>
                     </td>
                 </tr>
@@ -183,81 +208,22 @@
 </section>
 
 
-
-
-
-
-    <section>
-    
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="isHandset$"></a>
-                        <span class="name">
-                            <b>
-                            isHandset$
-                            </b>
-                            <a href="#isHandset$"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>isHandset$:     <code>Observable&lt;boolean&gt;</code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code>Observable&lt;boolean&gt;</code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result &#x3D;&gt; result.matches)
-    )</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/containers/sidenav/sidenav.component.ts:13</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-</section>
-
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { BreakpointObserver, Breakpoints } from &#x27;@angular/cdk/layout&#x27;;
-import { Component } from &#x27;@angular/core&#x27;;
-import { Observable } from &#x27;rxjs&#x27;;
-import { map } from &#x27;rxjs/operators&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;jh-site-sidenav&#x27;,
-  templateUrl: &#x27;./sidenav.component.html&#x27;,
-  styleUrls: [&#x27;./sidenav.component.css&#x27;]
+  selector: &#x27;jh-other&#x27;,
+  templateUrl: &#x27;./other.component.html&#x27;,
+  styleUrls: [&#x27;./other.component.scss&#x27;]
 })
-export class SidenavComponent {
+export class OtherComponent implements OnInit {
 
-  isHandset$: Observable&lt;boolean&gt; &#x3D; this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result &#x3D;&gt; result.matches)
-    );
+  constructor() { }
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  ngOnInit() {
   }
 
 }
@@ -265,36 +231,7 @@ export class SidenavComponent {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;mat-sidenav-container class&#x3D;&quot;sidenav-container&quot;&gt;
-  &lt;mat-sidenav
-    #drawer
-    class&#x3D;&quot;sidenav&quot;
-    fixedInViewport&#x3D;&quot;true&quot;
-    [attr.role]&#x3D;&quot;(isHandset$ | async) ? &#x27;dialog&#x27; : &#x27;navigation&#x27;&quot;
-    [mode]&#x3D;&quot;(isHandset$ | async) ? &#x27;over&#x27; : &#x27;side&#x27;&quot;
-    [opened]&#x3D;&quot;!(isHandset$ | async)&quot;&gt;
-    &lt;mat-toolbar color&#x3D;&quot;primary&quot;&gt;Menu&lt;/mat-toolbar&gt;
-    &lt;mat-nav-list&gt;
-      &lt;a mat-list-item href&#x3D;&quot;#&quot;&gt;Link 1&lt;/a&gt;
-      &lt;a mat-list-item href&#x3D;&quot;#&quot;&gt;Link 2&lt;/a&gt;
-      &lt;a mat-list-item href&#x3D;&quot;#&quot;&gt;Link 3&lt;/a&gt;
-    &lt;/mat-nav-list&gt;
-  &lt;/mat-sidenav&gt;
-  &lt;mat-sidenav-content&gt;
-    &lt;mat-toolbar color&#x3D;&quot;primary&quot;&gt;
-      &lt;button
-        type&#x3D;&quot;button&quot;
-        aria-label&#x3D;&quot;Toggle sidenav&quot;
-        mat-icon-button
-        (click)&#x3D;&quot;drawer.toggle()&quot;
-        *ngIf&#x3D;&quot;isHandset$ | async&quot;&gt;
-        &lt;mat-icon aria-label&#x3D;&quot;Side nav toggle icon&quot;&gt;menu&lt;/mat-icon&gt;
-      &lt;/button&gt;
-      &lt;span&gt;ngx-site&lt;/span&gt;
-    &lt;/mat-toolbar&gt;
-    &lt;!-- Add Content Here --&gt;
-  &lt;/mat-sidenav-content&gt;
-&lt;/mat-sidenav-container&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;h1&gt;Other stuff&lt;/h1&gt;
 </code></pre>
     </div>
 
@@ -323,10 +260,10 @@ export class SidenavComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-sidenav-container class="sidenav-container">  <mat-sidenav    #drawer    class="sidenav"    fixedInViewport="true"    [attr.role]="(isHandset$ | async) ? \'dialog\' : \'navigation\'"    [mode]="(isHandset$ | async) ? \'over\' : \'side\'"    [opened]="!(isHandset$ | async)">    <mat-toolbar color="primary">Menu</mat-toolbar>    <mat-nav-list>      <a mat-list-item href="#">Link 1</a>      <a mat-list-item href="#">Link 2</a>      <a mat-list-item href="#">Link 3</a>    </mat-nav-list>  </mat-sidenav>  <mat-sidenav-content>    <mat-toolbar color="primary">      <button        type="button"        aria-label="Toggle sidenav"        mat-icon-button        (click)="drawer.toggle()"        *ngIf="isHandset$ | async">        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>      </button>      <span>ngx-site</span>    </mat-toolbar>    <!-- Add Content Here -->  </mat-sidenav-content></mat-sidenav-container></div>'
+        var COMPONENT_TEMPLATE = '<div><h1>Other stuff</h1></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'SidenavComponent'};
+    var ACTUAL_COMPONENT = {'name': 'OtherComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -360,7 +297,7 @@ export class SidenavComponent {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'SidenavComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'OtherComponent.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

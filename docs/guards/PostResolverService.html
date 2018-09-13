@@ -30,7 +30,7 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content injectable">
+               <div class="content guard">
                    <div class="content-data">
 
 
@@ -39,9 +39,11 @@
 
 
 
+
+
 <ol class="breadcrumb">
-  <li>Injectables</li>
-  <li>PostService</li>
+    <li>Guards</li>
+    <li>PostResolverService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -54,34 +56,22 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="c-info">
-        <p class="comment">
+        <div class="tab-pane fade active in" id="c-info">
+            <p class="comment">
             <h3>File</h3>
-        </p>
-        <p class="comment">
-            <code>src/app/components/post/post.service.ts</code>
-        </p>
+            </p>
+            <p class="comment">
+                <code>src/app/components/post/post-resolver.service.ts</code>
+            </p>
 
 
 
-            <section>
+
+
+                <section>
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                <a href="#postData">postData</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -92,7 +82,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#getPost">getPost</a>
+                                <a href="#resolve">resolve</a>
                             </li>
                         </ul>
                     </td>
@@ -106,26 +96,56 @@
     </table>
 </section>
 
-            <section>
+                <section>
     <h3 id="constructor">Constructor</h3>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(postService: <a href="../injectables/PostService.html">PostService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/components/post/post.service.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/components/post/post-resolver.service.ts:9</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>postService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/PostService.html" target="_self" >PostService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
 
-            <section>
+                <section>
     
         <h3 id="methods">
             Methods
@@ -134,25 +154,25 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="getPost"></a>
+                        <a name="resolve"></a>
                         <span class="name">
                             <b>
-                            getPost
+                            resolve
                             </b>
-                            <a href="#getPost"><span class="icon ion-ios-link"></span></a>
+                            <a href="#resolve"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-<code>getPost(id: number | string)</code>
+<code>resolve(route: <a href="https://angular.io/api/router/ActivatedRouteSnapshot" target="_blank">ActivatedRouteSnapshot</a>)</code>
                     </td>
                 </tr>
 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/post/post.service.ts:13</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/post/post-resolver.service.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -172,9 +192,9 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>id</td>
+                                                        <td>route</td>
                                                         <td>
-                                                                    <code>number | string</code>
+                                                                    <code><a href="https://angular.io/api/router/ActivatedRouteSnapshot" target="_blank" >ActivatedRouteSnapshot</a></code>
                                                         </td>
                                                     
                                                     <td>
@@ -201,75 +221,32 @@
         </table>
 </section>
 
-            <section>
-    
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="postData"></a>
-                        <span class="name">
-                            <b>
-                            postData
-                            </b>
-                            <a href="#postData"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>postData:     <code></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>data.default</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/components/post/post.service.ts:9</a></div>
-                            </td>
-                        </tr>
+        </div>
 
 
-            </tbody>
-        </table>
-</section>
-
-    </div>
-
-
-    <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+        <div class="tab-pane fade  tab-source-code" id="c-source">
+            <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { ActivatedRouteSnapshot, Resolve } from &#x27;@angular/router&#x27;;
+import { PostService } from &#x27;@jh/components/post/post.service&#x27;;
 import { Observable } from &#x27;rxjs&#x27;;
-import * as data from &#x27;@jh_posts/posts.json&#x27;;
 
 @Injectable({
   providedIn: &#x27;root&#x27;
 })
-export class PostService {
-  postData &#x3D; data.default;
+export class PostResolverService implements Resolve&lt;any&gt; {
 
-  constructor() { }
+  constructor(private postService: PostService) {
+  }
 
-  getPost(id: number | string): Observable&lt;any&gt; {
-    console.log(&#x27;id: &#x27;, id ? id : &#x27;&#x27;);
-    return this.postData.find((posts: any) &#x3D;&gt;
-      posts.attributes.urlTitle &#x3D;&#x3D;&#x3D; id
-    );
+  resolve(route: ActivatedRouteSnapshot): Observable&lt;any&gt; {
+    const id &#x3D; route.paramMap.get(&#x27;urlTitle&#x27;);
+    console.log(id);
+    return this.postService.getPost(route.paramMap.get(&#x27;urlTitle&#x27;));
   }
 }
 </code></pre>
-    </div>
-
+        </div>
 </div>
-
-
 
 
 
@@ -295,8 +272,8 @@ export class PostService {
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
-            var COMPODOC_CURRENT_PAGE_URL = 'PostService.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'guard';
+            var COMPODOC_CURRENT_PAGE_URL = 'PostResolverService.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

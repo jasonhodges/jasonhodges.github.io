@@ -1,0 +1,62 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "files",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/about.md",
+        "/assets/images/0D1DE51C95067099AA773EFD740EE10D.jpg",
+        "/assets/images/CA50A1A0F7162AFA5238174AFB3236B2.jpg",
+        "/assets/images/CD1C8F4D7EC48D11AF9B7D00C61C7472.jpg",
+        "/assets/images/angular.png",
+        "/assets/posts/2018-05-01-dynamic-styles.md",
+        "/assets/posts/posts.json",
+        "/index.html",
+        "/main.be2bba7e4fda5f265278.js",
+        "/polyfills.e3633a42d1123afc5fc9.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/scripts.ac1a1e23bc8213e963d1.js"
+      ],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css\\?family=Montserrat|Railway",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/s\\/montserrat\\/v10\\/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8\\.woff2"
+      ]
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/about.md": "5f87a5a015104ae1f016fda7ddd64d6966128e85",
+    "/assets/images/0D1DE51C95067099AA773EFD740EE10D.jpg": "e1efb8ba300f53efff23490242e515c9db2dcc9d",
+    "/assets/images/CA50A1A0F7162AFA5238174AFB3236B2.jpg": "da30390cf5b5c428bc3d0b7775257820a6c0d505",
+    "/assets/images/CD1C8F4D7EC48D11AF9B7D00C61C7472.jpg": "0b484c21a262c87067f3283b901adc6e6cdb1cb2",
+    "/assets/images/angular.png": "f0191f8d50460c560d9e28b29e849b4f44ed0bf4",
+    "/assets/posts/2018-05-01-dynamic-styles.md": "04785b04d64b657735598e76de6f0359e6366093",
+    "/assets/posts/posts.json": "45045cf8c2b12334d0a09abd9d4aa4bec6ca9228",
+    "/index.html": "7c583b2cfaa7b3e700a2b51fd7926a170b0acdca",
+    "/main.be2bba7e4fda5f265278.js": "66e4b17575570f240dd0a312f60fe16b0e526fa3",
+    "/polyfills.e3633a42d1123afc5fc9.js": "5261a4729f780dd900641be94bd321182959641a",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/scripts.ac1a1e23bc8213e963d1.js": "1bf5ce87d965d5eb1917582b094a259bc759fc05"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
