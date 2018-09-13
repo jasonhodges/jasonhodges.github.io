@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PostResolverService } from '@ngx-site/components/post/post-resolver.service';
-import { PostComponent } from '@ngx-site/components/post/post.component';
-import { AboutComponent } from '@ngx-site/containers/about/about.component';
-import { HomeComponent } from '@ngx-site/containers/home/home.component';
-import { OtherComponent } from '@ngx-site/containers/other/other.component';
+import { PostResolverService } from '@jh/components/post/post-resolver.service';
+import { PostComponent } from '@jh/components/post/post.component';
+import { AboutComponent } from '@jh/containers/about/about.component';
+import { HomeComponent } from '@jh/containers/home/home.component';
+import { OtherComponent } from '@jh/containers/other/other.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
