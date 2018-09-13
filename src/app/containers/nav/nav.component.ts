@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'ngx-site-nav',
+  selector: 'jh-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })

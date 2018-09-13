@@ -3,13 +3,13 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@ngx-site/*": [
+      "@jh/*": [
         "app/*"
       ],
-      "~ngx-site/variables": [
+      "~jh/variables": [
         "app/styles/variables.scss"
       ],
-      "@ngx-site_posts/*": [
+      "@jh_posts/*": [
         "assets/posts/*"
       ]
     },

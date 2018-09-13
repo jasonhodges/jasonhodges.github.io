@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import * as data from '@ngx-site_posts/posts.json'
+import * as data from '@jh_posts/posts.json';
 
 @Injectable({
   providedIn: 'root'

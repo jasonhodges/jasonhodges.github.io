@@ -26,9 +26,8 @@ $background-color: $color-primary-1;
 /*----------------*\
     $fonts
 \*----------------*/
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-//$base-font-family: 'Trirong', serif;
-$headline-font-family: 'Rubik', sans-serif;
+$base-font-family: 'Raleway', sans-serif;
+$headline-font-family: 'Montserrat', sans-serif;
 $base-font-size: 16px;
 $base-font-weight: 300;
 $small-font-size: $base-font-size * 0.875;
@@ -44,9 +43,6 @@ $height-app: 100%;
 $height-header: 70px;
 $height-footer: 60px;
 $width_content-max: 800px;
-$on-mobile: 600px;
-$on-tablet: 700px;
-$on-laptop: 800px;
 
 
 /*----------------*\

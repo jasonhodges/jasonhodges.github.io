@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as data from '../assets/posts/posts.json';
 
 @Component({
-  selector: 'ngx-site-root',
+  selector: 'jh-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   preserveWhitespaces: true

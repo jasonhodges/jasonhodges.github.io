@@ -10,13 +10,17 @@ export class PostComponent implements OnInit {
   id: any;
   postPath: string;
   postBody: string;
-  constructor(private activatedRoute: ActivatedRoute) { }
+  postTitle: string;
+
+  constructor(private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit() {
     this.activatedRoute.data.subscribe((data) => {
       console.log('data: ', data);
       this.postPath = data.post['path'];
       this.postBody = data.post['body'];
-    })
+      this.postTitle = data.post.attributes['title'];
+    });
   }
 }

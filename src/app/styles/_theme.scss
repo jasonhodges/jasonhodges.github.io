@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
-@import url('https://fonts.googleapis.com/css?family=Rubik|Trirong');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
 
 @import 'variables';
 @import 'base';
@@ -10,17 +10,4 @@
 
 
 
-/* Basic styling */
-body {
-  height: $height-body;
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  text-rendering: optimizeLegibility;
-}
+

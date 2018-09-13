@@ -1,22 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { AppMaterialModule } from '@ngx-site/app-material.module';
 
-import { NavComponent } from './nav.component';
+import { OtherComponent } from './other.component';
 
-describe('NavComponent', () => {
-  let component: NavComponent;
-  let fixture: ComponentFixture<NavComponent>;
+describe('OtherComponent', () => {
+  let component: OtherComponent;
+  let fixture: ComponentFixture<OtherComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ AppMaterialModule ],
-      declarations: [ NavComponent ]
+      declarations: [ OtherComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavComponent);
+    fixture = TestBed.createComponent(OtherComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
-  selector: 'ngx-site-about',
+  selector: 'jh-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })

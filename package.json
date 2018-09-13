@@ -6,15 +6,16 @@
     "start": "ng serve",
     "hmr": "ng serve --configuration hmr",
     "build": "ng build",
-    "build:publish": "ng build --prod --base-href 'https://jasonhodges.github.io'",
+    "build:publish": "ng build --prod --base-href 'https://jasonhodges.codes'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "cz": "git add . && git-cz",
-    "publish": "ngh --dir ./dist --no-silent --name=\"Jason Hodges\" --email=\"jasonlhodges@gmail.com\"",
+    "publish": "ngh --branch=master --dir ./dist --no-silent --name=\"Jason Hodges\" --email=\"jasonlhodges@gmail.com\"",
     "publish:full": "yarn build:publish && yarn docs && yarn docs:copy && yarn run publish",
     "docs": "./node_modules/.bin/compodoc -p src/tsconfig.app.json",
-    "docs:copy": "cp -R ./documentation ./dist/docs"
+    "docs:copy": "cp -R ./documentation ./dist/docs",
+    "dirparse": "node ./config/dir-parse.js"
   },
   "private": true,
   "config": {
