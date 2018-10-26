@@ -22,6 +22,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Scripts have been set up to build the site as well as create the documentation via Compodoc. In order to create a full build and publish, run `yarn publish:full`.
 
+Pushing changes on develop will kick of TravisCI. If a success pipeline is complete, Travis will deploy to master on Github and the newly updated site will be live.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
