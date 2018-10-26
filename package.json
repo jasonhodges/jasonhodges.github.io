@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "cz": "git add . && git-cz",
-    "publish": "ngh --branch=master --dir ./dist --no-silent --name=\"Jason Hodges\" --email=\"jasonlhodges@gmail.com\"",
+    "publish": "npx ngh --branch=master --dir ./dist --no-silent --name=\"Jason Hodges\" --email=\"jasonlhodges@gmail.com\"",
     "publish:full": "yarn build:publish && yarn docs && yarn docs:copy && yarn run publish",
     "docs": "./node_modules/.bin/compodoc -p src/tsconfig.app.json",
     "docs:copy": "cp -R ./documentation ./dist/docs",

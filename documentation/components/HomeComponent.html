@@ -38,7 +38,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>OtherComponent</li>
+  <li>HomeComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/containers/other/other.component.ts</code>
+    <code>src/app/containers/home/home.component.ts</code>
 </p>
 
 
@@ -91,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>jh-other</code></td>
+                <td class="col-md-9"><code>jh-home</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>other.component.scss</code></td>
+                <td class="col-md-9"><code>home.component.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./other.component.html</code></td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
             </tr>
 
 
@@ -150,7 +150,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/containers/other/other.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/containers/home/home.component.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -189,7 +189,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/containers/other/other.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/containers/home/home.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -215,11 +215,11 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;jh-other&#x27;,
-  templateUrl: &#x27;./other.component.html&#x27;,
-  styleUrls: [&#x27;./other.component.scss&#x27;]
+  selector: &#x27;jh-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.scss&#x27;]
 })
-export class OtherComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   constructor() { }
 
@@ -231,7 +231,11 @@ export class OtherComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;h1&gt;Other stuff&lt;/h1&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;main&gt;
+  &lt;section class&#x3D;&quot;posts-section&quot;&gt;
+    &lt;jh-posts&gt;&lt;/jh-posts&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
 </code></pre>
     </div>
 
@@ -260,10 +264,10 @@ export class OtherComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1>Other stuff</h1></div>'
+        var COMPONENT_TEMPLATE = '<div><main>  <section class="posts-section">    <jh-posts></jh-posts>  </section></main></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'OtherComponent'};
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -297,7 +301,7 @@ export class OtherComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'OtherComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

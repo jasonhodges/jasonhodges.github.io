@@ -38,7 +38,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>OtherComponent</li>
+  <li>HeaderComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -61,7 +61,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/containers/other/other.component.ts</code>
+    <code>src/app/containers/header/header.component.ts</code>
 </p>
 
 
@@ -91,19 +91,19 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>jh-other</code></td>
+                <td class="col-md-9"><code>jh-header</code></td>
             </tr>
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>other.component.scss</code></td>
+                <td class="col-md-9"><code>header.component.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./other.component.html</code></td>
+                <td class="col-md-9"><code>./header.component.html</code></td>
             </tr>
 
 
@@ -150,7 +150,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/containers/other/other.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/containers/header/header.component.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -189,7 +189,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/containers/other/other.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/containers/header/header.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -215,11 +215,11 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;jh-other&#x27;,
-  templateUrl: &#x27;./other.component.html&#x27;,
-  styleUrls: [&#x27;./other.component.scss&#x27;]
+  selector: &#x27;jh-header&#x27;,
+  templateUrl: &#x27;./header.component.html&#x27;,
+  styleUrls: [&#x27;./header.component.scss&#x27;]
 })
-export class OtherComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
   constructor() { }
 
@@ -231,7 +231,14 @@ export class OtherComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;h1&gt;Other stuff&lt;/h1&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;header&gt;
+  &lt;div style&#x3D;&quot;text-align:center&quot;&gt;
+    &lt;img width&#x3D;&quot;30&quot;
+         alt&#x3D;&quot;Angular Logo&quot;
+         src&#x3D;&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg&#x3D;&#x3D;&quot;&gt;
+  &lt;/div&gt;
+  &lt;jh-nav&gt;&lt;/jh-nav&gt;
+&lt;/header&gt;
 </code></pre>
     </div>
 
@@ -260,10 +267,10 @@ export class OtherComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1>Other stuff</h1></div>'
+        var COMPONENT_TEMPLATE = '<div><header>  <div style="text-align:center">    <img width="30"         alt="Angular Logo"         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">  </div>  <jh-nav></jh-nav></header></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'OtherComponent'};
+    var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};
 </script>
 <script src="../js/tree.js"></script>
 
@@ -297,7 +304,7 @@ export class OtherComponent implements OnInit {
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'OtherComponent.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'HeaderComponent.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

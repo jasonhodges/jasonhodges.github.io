@@ -30,15 +30,18 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content component">
+               <div class="content injectable">
                    <div class="content-data">
 
 
 
 
+
+
+
 <ol class="breadcrumb">
-  <li>Components</li>
-  <li>OtherComponent</li>
+  <li>Injectables</li>
+  <li>PostService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -48,73 +51,37 @@
         <li >
             <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
         </li>
-        <li >
-            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
-        </li>
-        <li >
-            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
-        </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="c-info"><p class="comment">
-    <h3>File</h3>
-</p>
-<p class="comment">
-    <code>src/app/containers/other/other.component.ts</code>
-</p>
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/components/post/post.service.ts</code>
+        </p>
 
 
 
-    <p class="comment">
-        <h3>Implements</h3>
-    </p>
-    <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-    </p>
-
-
-<section>
-    <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
-        <tbody>
-
-
-
-
-
-
-
-
-
-
-
-            <tr>
-                <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>jh-other</code></td>
-            </tr>
-
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>other.component.scss</code></td>
-            </tr>
-
-
-
-            <tr>
-                <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./other.component.html</code></td>
-            </tr>
-
-
-        </tbody>
-    </table>
-</section>
-
-    <section>
+            <section>
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#postData">postData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -125,7 +92,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#ngOnInit">ngOnInit</a>
+                                <a href="#getPost">getPost</a>
                             </li>
                         </ul>
                     </td>
@@ -139,7 +106,7 @@
     </table>
 </section>
 
-    <section>
+            <section>
     <h3 id="constructor">Constructor</h3>
         <table class="table table-sm table-bordered">
             <tbody>
@@ -150,7 +117,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/containers/other/other.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/components/post/post.service.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -158,11 +125,7 @@
         </table>
 </section>
 
-
-
-
-
-    <section>
+            <section>
     
         <h3 id="methods">
             Methods
@@ -171,25 +134,25 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="ngOnInit"></a>
+                        <a name="getPost"></a>
                         <span class="name">
                             <b>
-                            ngOnInit
+                            getPost
                             </b>
-                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                            <a href="#getPost"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-<code>ngOnInit()</code>
+<code>getPost(id: number | string)</code>
                     </td>
                 </tr>
 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/containers/other/other.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/post/post.service.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -198,77 +161,113 @@
                     <td class="col-md-4">
 
                             <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code>number | string</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                             </div>
+                                <div class="io-description">
+                                    
+                                </div>
                     </td>
                 </tr>
             </tbody>
         </table>
 </section>
 
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="postData"></a>
+                        <span class="name">
+                            <b>
+                            postData
+                            </b>
+                            <a href="#postData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>postData:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>data.default</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/components/post/post.service.ts:9</a></div>
+                            </td>
+                        </tr>
 
-</div>
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import * as data from &#x27;@jh_posts/posts.json&#x27;;
 
-@Component({
-  selector: &#x27;jh-other&#x27;,
-  templateUrl: &#x27;./other.component.html&#x27;,
-  styleUrls: [&#x27;./other.component.scss&#x27;]
+@Injectable({
+  providedIn: &#x27;root&#x27;
 })
-export class OtherComponent implements OnInit {
+export class PostService {
+  postData &#x3D; data.default;
 
   constructor() { }
 
-  ngOnInit() {
+  getPost(id: number | string): Observable&lt;any&gt; {
+    console.log(&#x27;id: &#x27;, id ? id : &#x27;&#x27;);
+    return this.postData.find((posts: any) &#x3D;&gt;
+      posts.attributes.urlTitle &#x3D;&#x3D;&#x3D; id
+    );
   }
-
 }
 </code></pre>
     </div>
 
-    <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;h1&gt;Other stuff&lt;/h1&gt;
-</code></pre>
-    </div>
-
-    <div class="tab-pane fade " id="c-tree">
-        <div id="tree-container"></div>
-        <div class="tree-legend">
-            <div class="title">
-                <b>Legend</b>
-            </div>
-            <div>
-                <div class="color htmlelement"></div><span>Html element</span>
-            </div>
-            <div>
-                <div class="color component"></div><span>Component</span>
-            </div>
-            <div>
-                <div class="color directive"></div><span>Html element with directive</span>
-            </div>
-        </div>
-    </div>
-
-    
 </div>
-
-<script src="../js/libs/vis.min.js"></script>
-<script src="../js/libs/htmlparser.js"></script>
-<script src="../js/libs/deep-iterator.js"></script>
-<script>
-        var COMPONENT_TEMPLATE = '<div><h1>Other stuff</h1></div>'
-    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
-    var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'OtherComponent'};
-</script>
-<script src="../js/tree.js"></script>
-
-
-
 
 
 
@@ -296,8 +295,8 @@ export class OtherComponent implements OnInit {
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'OtherComponent.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PostService.html';
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
