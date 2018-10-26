@@ -46,6 +46,7 @@
 <p>Run <code>ng build</code> to build the project. The build artifacts will be stored in the <code>dist/</code> directory. Use the <code>--prod</code> flag for a production build.</p>
 <h2 id="publishing">Publishing</h2>
 <p>Scripts have been set up to build the site as well as create the documentation via Compodoc. In order to create a full build and publish, run <code>yarn publish:full</code>.</p>
+<p>Pushing changes on develop will kick of TravisCI. If a success pipeline is complete, Travis will deploy to master on Github and the newly updated site will be live.</p>
 <h2 id="running-unit-tests">Running unit tests</h2>
 <p>Run <code>ng test</code> to execute the unit tests via <a href="https://karma-runner.github.io">Karma</a>.</p>
 <h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
