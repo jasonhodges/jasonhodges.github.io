@@ -7,7 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `yarn start`  or `yarn hmr` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ### Commitizen
-Commitizen should be installed globally (or locally) `npm install -g commitizen` in order for `git-cz` to work
+Commitizen should be installed globally (or locally) `npm install -g commitizen` in order for `git-cz` to work.
+https://github.com/commitizen/cz-cli
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

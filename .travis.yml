@@ -31,6 +31,7 @@ env:
 
 deploy:
   provider: pages
+  fqdn: jasonhodges.codes
   skip_cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
