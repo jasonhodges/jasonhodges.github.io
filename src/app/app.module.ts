@@ -9,6 +9,8 @@ import { AppComponent } from '@jh/app.component';
 import { ContainersModule } from '@jh/containers/containers.module';
 import { HeaderComponent } from '@jh/containers/header/header.component';
 import { NavComponent } from '@jh/containers/nav/nav.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -25,6 +27,7 @@ import { NavComponent } from '@jh/containers/nav/nav.component';
     HttpClientModule,
     AppMaterialModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   exports: [],
   providers: [],

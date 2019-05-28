@@ -1,20 +1,28 @@
 {
-  "configVersion": 1,
   "index": "/index.html",
-  "assetGroups": [
-    {
-      "name": "files",
-      "resources": {
-        "files": [
-          "/**/*.html",
-          "/**/*.js",
-          "/assets/**"
-        ],
-        "urls": [
-          "https://fonts.googleapis.com/css?family=Montserrat|Railway",
-          "https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2"
-        ]
-      }
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html",
+        "/*.css",
+        "/*.js"
+      ]
     }
-  ]
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**"
+      ],
+      "urls": [
+        "https://fonts.googleapis.com/css?family=Montserrat|Railway",
+        "https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2"
+      ]
+    }
+  }]
 }

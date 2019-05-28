@@ -25,7 +25,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/posts"
+              "src/assets/posts",
+              "src/manifest.json"
             ],
             "styles": [
               "src/app/styles/normalize.css",
@@ -107,7 +108,8 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ]
           }
         },
