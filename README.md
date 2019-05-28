@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `yarn start`  or `yarn hmr` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+### Commitizen
+Commitizen should be installed globally (or locally) `npm install -g commitizen` in order for `git-cz` to work.
+https://github.com/commitizen/cz-cli
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -17,6 +21,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Publishing
 
 Scripts have been set up to build the site as well as create the documentation via Compodoc. In order to create a full build and publish, run `yarn publish:full`.
+
+Pushing changes on develop will kick of TravisCI. If a success pipeline is complete, Travis will deploy to master on Github and the newly updated site will be live.
 
 ## Running unit tests
 
