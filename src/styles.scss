@@ -1,20 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "app/styles/theme";
 
-//:host {
-//  all: unset;
-//}
-
-//ngx-site-root.container {
-//  all: unset;
-//}
-
 ngx-site-root {
   height: $height-app;
 }
 
 // Header styles
-//$header-logo: $logo;
 $header-height: $height-header;
 $header-bgColor: $color-light-1;
 header {
@@ -25,7 +16,6 @@ header {
     width: $header-height;
     background-size: contain;
     background-repeat: no-repeat;
-    //background-image: $header-logo;
   }
   nav {
     align-self: center;
@@ -38,9 +28,9 @@ header {
   border: 1px solid #3c3b3b;
   position: relative;
   padding: 8px;
+  margin-bottom: 8px;
   &--title {
     position: inherit;
-    font-family: "Rubik", sans-serif;
     font-weight: 700;
     letter-spacing: 0;
     line-height: 1;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Post } from '@jh/shared/post.model';
 import * as data from '@jh_posts/posts.json';
 
 @Component({
@@ -8,7 +9,7 @@ import * as data from '@jh_posts/posts.json';
   styleUrls: ['./posts.component.scss']
 })
 export class PostsComponent implements OnInit {
-  postData = data.default;
+  postData: Post[] = data.default;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
   }

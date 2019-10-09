@@ -1,7 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "src",
+    "importHelpers": true,
     "paths": {
       "@jh/*": [
         "app/*"
