@@ -22,7 +22,9 @@ export class SEOService {
 
   updateOgUrl(url: string) {
     this.updateOgType('article');
-    this.meta.updateTag({ property: 'og:url', content: this.siteUrl + url });
+    const fullUrl = this.siteUrl + url;
+    this.meta.updateTag({ property: 'og:url', content: fullUrl });
+    return fullUrl;
   }
 
   updateDescription(desc: string) {

@@ -12,6 +12,9 @@ export class PostComponent implements OnInit {
   postPath: string;
   postBody: string;
   postTitle: string;
+  ogUrl = 'https://jasonhodges.codes';
+  permalink: string;
+  urlTitle: string;
 
   constructor(private activatedRoute: ActivatedRoute, private seoService: SEOService) {
   }
@@ -19,6 +22,8 @@ export class PostComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.data.subscribe((data) => {
       console.log('data: ', data);
+      this.permalink = data.post.attributes['permalink'];
+      this.urlTitle = data.post.attributes['urlTitle'];
       this.seoService.updateDescription(data.post.attributes['seo__desc']);
       this.seoService.updateKeywords(data.post.attributes['seo__key']);
       this.seoService.updateTitle(data.post.attributes['title']);

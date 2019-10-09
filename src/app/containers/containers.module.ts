@@ -7,6 +7,7 @@ import { PostsComponent } from '@jh/components/posts/posts.component';
 import { AboutComponent } from '@jh/containers/about/about.component';
 import { HomeComponent } from '@jh/containers/home/home.component';
 import { SidenavComponent } from '@jh/containers/sidenav/sidenav.component';
+import { DisqusModule } from 'ngx-disqus';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { OtherComponent } from './other/other.component';
 
@@ -23,7 +24,8 @@ import { OtherComponent } from './other/other.component';
           gfm: true
         }
       }
-    })
+    }),
+    DisqusModule.forRoot('jasonhodges-codes')
   ],
   declarations: [
     AboutComponent,

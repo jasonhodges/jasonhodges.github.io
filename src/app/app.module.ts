@@ -12,7 +12,6 @@ import { NavComponent } from '@jh/containers/nav/nav.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
-
 @NgModule({
   declarations: [
     AppComponent,
