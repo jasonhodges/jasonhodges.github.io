@@ -2,6 +2,7 @@
 layout : post
 title : Angular Dynamic Styles
 topic: angular
+type: article
 categories : blog
 permalink : /blog/Angular-Dynamic-Styles/
 comments : true
