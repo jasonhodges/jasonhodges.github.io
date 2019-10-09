@@ -251,6 +251,7 @@ import { PostsComponent } from &#x27;@jh/components/posts/posts.component&#x27;;
 import { AboutComponent } from &#x27;@jh/containers/about/about.component&#x27;;
 import { HomeComponent } from &#x27;@jh/containers/home/home.component&#x27;;
 import { SidenavComponent } from &#x27;@jh/containers/sidenav/sidenav.component&#x27;;
+import { DisqusModule } from &#x27;ngx-disqus&#x27;;
 import { MarkdownModule, MarkedOptions } from &#x27;ngx-markdown&#x27;;
 import { OtherComponent } from &#x27;./other/other.component&#x27;;
 
@@ -267,7 +268,8 @@ import { OtherComponent } from &#x27;./other/other.component&#x27;;
           gfm: true
         }
       }
-    })
+    }),
+    DisqusModule.forRoot(&#x27;jasonhodges-codes&#x27;)
   ],
   declarations: [
     AboutComponent,

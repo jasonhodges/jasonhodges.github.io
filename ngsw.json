@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1570590562841,
+  "timestamp": 1570651428012,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,7 +10,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.d684ac2435449c7c1122.js",
+        "/main.d6ce86f8c80c366fa580.js",
         "/polyfills-es5.811b99f7b9b4820fb5db.js",
         "/polyfills.ee57954bd6857ed4ce38.js",
         "/runtime.69aad174de386c36a16c.js",
@@ -25,6 +25,11 @@
       "updateMode": "prefetch",
       "urls": [
         "/assets/about.md",
+        "/assets/icons/android-chrome-192x192.png",
+        "/assets/icons/android-chrome-512x512.png",
+        "/assets/icons/apple-touch-icon.png",
+        "/assets/icons/favicon-16x16.png",
+        "/assets/icons/favicon-32x32.png",
         "/assets/icons/icon-128x128.png",
         "/assets/icons/icon-144x144.png",
         "/assets/icons/icon-152x152.png",
@@ -50,6 +55,11 @@
   "dataGroups": [],
   "hashTable": {
     "/assets/about.md": "5f87a5a015104ae1f016fda7ddd64d6966128e85",
+    "/assets/icons/android-chrome-192x192.png": "12f1acf63f4a2348e2655078570ef3257c805591",
+    "/assets/icons/android-chrome-512x512.png": "eb5894f7a067e710b32cfd53e081fb3f9b77a152",
+    "/assets/icons/apple-touch-icon.png": "8aa5b4fe6e4ccf1880879b2d9b173362ec71cf98",
+    "/assets/icons/favicon-16x16.png": "569347179246173b11a0316ec21e5c8b88ed7699",
+    "/assets/icons/favicon-32x32.png": "c019cfb77a455fc03d4ab72c38f58ae44271d02e",
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -65,9 +75,9 @@
     "/assets/posts/2016-03-03-angular-conditional-number-format.md": "1d463388f833bcb2129c6300816c38393c3fd2fd",
     "/assets/posts/2018-05-01-dynamic-styles.md": "558581b9a03df406d1d2162ff22abc9ead1b9b1e",
     "/assets/posts/posts.json": "2b6955d5f9bd2cbb1ecd180e4cc91668b9d9b869",
-    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "8b1ad764a4be6ded4c982bc21e9864ba51e264fa",
-    "/main.d684ac2435449c7c1122.js": "8808f56eb7f54d6f8b759b1c75939d191c0b4011",
+    "/favicon.ico": "578cfcfca0b2022ccbc6a024997e4111913e2e71",
+    "/index.html": "7449096174e246ff6e014fd72f2f8401ae367d3f",
+    "/main.d6ce86f8c80c366fa580.js": "fec1919341897043a28bd896c7050b2da7ecb1c8",
     "/polyfills-es5.811b99f7b9b4820fb5db.js": "53ee9080b2ab5e69ee45f9c5cc7f13958b4718b1",
     "/polyfills.ee57954bd6857ed4ce38.js": "2d2f5b86fdbdb41022082c429ddf9652be68c24f",
     "/runtime.69aad174de386c36a16c.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",

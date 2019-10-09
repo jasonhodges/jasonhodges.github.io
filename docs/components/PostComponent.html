@@ -133,6 +133,12 @@
                                 <a href="#id">id</a>
                             </li>
                             <li>
+                                <a href="#ogUrl">ogUrl</a>
+                            </li>
+                            <li>
+                                <a href="#permalink">permalink</a>
+                            </li>
+                            <li>
                                 <a href="#postBody">postBody</a>
                             </li>
                             <li>
@@ -140,6 +146,9 @@
                             </li>
                             <li>
                                 <a href="#postTitle">postTitle</a>
+                            </li>
+                            <li>
+                                <a href="#urlTitle">urlTitle</a>
                             </li>
                         </ul>
                     </td>
@@ -179,7 +188,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/post/post.component.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/post/post.component.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -260,8 +269,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="19"
-                            class="link-to-prism">src/app/components/post/post.component.ts:19</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/components/post/post.component.ts:22</a></div>
                 </td>
             </tr>
 
@@ -304,6 +313,65 @@
                         <tr>
                             <td class="col-md-4">
                                     <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/post/post.component.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ogUrl"></a>
+                        <span class="name">
+                            <b>
+                            ogUrl</b>
+                            <a href="#ogUrl"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;https://jasonhodges.codes&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/post/post.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="permalink"></a>
+                        <span class="name">
+                            <b>
+                            permalink</b>
+                            <a href="#permalink"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/post/post.component.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -391,6 +459,33 @@
 
             </tbody>
         </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="urlTitle"></a>
+                        <span class="name">
+                            <b>
+                            urlTitle</b>
+                            <a href="#urlTitle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/post/post.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
 </section>
 
 </div>
@@ -411,6 +506,9 @@ export class PostComponent implements OnInit {
   postPath: string;
   postBody: string;
   postTitle: string;
+  ogUrl &#x3D; &#x27;https://jasonhodges.codes&#x27;;
+  permalink: string;
+  urlTitle: string;
 
   constructor(private activatedRoute: ActivatedRoute, private seoService: SEOService) {
   }
@@ -418,6 +516,8 @@ export class PostComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.data.subscribe((data) &#x3D;&gt; {
       console.log(&#x27;data: &#x27;, data);
+      this.permalink &#x3D; data.post.attributes[&#x27;permalink&#x27;];
+      this.urlTitle &#x3D; data.post.attributes[&#x27;urlTitle&#x27;];
       this.seoService.updateDescription(data.post.attributes[&#x27;seo__desc&#x27;]);
       this.seoService.updateKeywords(data.post.attributes[&#x27;seo__key&#x27;]);
       this.seoService.updateTitle(data.post.attributes[&#x27;title&#x27;]);
@@ -435,6 +535,7 @@ export class PostComponent implements OnInit {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;h1&gt;{{postTitle}}&lt;/h1&gt;
 &lt;markdown [data]&#x3D;&quot;postBody&quot;&gt;&lt;/markdown&gt;
+&lt;disqus [url]&#x3D;&quot;urlTitle&quot; [identifier]&#x3D;&quot;postTitle&quot;&gt;&lt;/disqus&gt;
 </code></pre>
     </div>
 
@@ -470,7 +571,7 @@ export class PostComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h1>{{postTitle}}</h1><markdown [data]="postBody"></markdown></div>'
+        var COMPONENT_TEMPLATE = '<div><h1>{{postTitle}}</h1><markdown [data]="postBody"></markdown><disqus [url]="urlTitle" [identifier]="postTitle"></disqus></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PostComponent'};

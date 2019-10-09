@@ -207,8 +207,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="28"
-                            class="link-to-prism">src/app/services/seo-service/seoservice.service.ts:28</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/services/seo-service/seoservice.service.ts:30</a></div>
                 </td>
             </tr>
 
@@ -277,8 +277,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="32"
-                            class="link-to-prism">src/app/services/seo-service/seoservice.service.ts:32</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/services/seo-service/seoservice.service.ts:34</a></div>
                 </td>
             </tr>
 
@@ -455,7 +455,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                     </div>
                     <div class="io-description">
@@ -634,7 +634,9 @@ export class SEOService {
 
   updateOgUrl(url: string) {
     this.updateOgType(&#x27;article&#x27;);
-    this.meta.updateTag({ property: &#x27;og:url&#x27;, content: this.siteUrl + url });
+    const fullUrl &#x3D; this.siteUrl + url;
+    this.meta.updateTag({ property: &#x27;og:url&#x27;, content: fullUrl });
+    return fullUrl;
   }
 
   updateDescription(desc: string) {
