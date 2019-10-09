@@ -1,3 +1,5 @@
+@import "variables";
+
 /**
  * Reset some basic elements
  */
@@ -79,11 +81,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $grey;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($grey-color-dark, 15%);
   }
 
   &:hover {
@@ -112,7 +114,7 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 3px;
 }
 
@@ -123,7 +125,6 @@ code {
 pre {
   padding: 8px 12px;
   overflow-x: auto;
-  //border: 1px solid $grey-color-light;
   > code {
     border: 0;
     padding-right: 0;

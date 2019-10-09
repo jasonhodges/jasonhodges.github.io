@@ -1,8 +1,8 @@
 <ng-container *ngFor="let post of postData">
-  <mat-card class="posts-card">
+  <mat-card class="posts-card" (click)="navigateToPost(post.attributes.urlTitle)">
     <mat-card-header>
-      <div mat-card-avatar ngClass="header-image header-image__{{post.attributes.topic}}"></div>
-      <mat-card-title class="posts-card--title" (click)="navigateToPost(post.attributes.urlTitle)">{{post.attributes.title}}</mat-card-title>
+      <div mat-card-avatar [ngClass]="'header-image header-image__' + post.attributes.topic"></div>
+      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>
     </mat-card-header>
 
     <mat-card-content>
