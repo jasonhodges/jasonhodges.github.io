@@ -26,11 +26,12 @@ $background-color: $color-primary-1;
 /*----------------*\
     $fonts
 \*----------------*/
-$base-font-family: 'Raleway', sans-serif;
-$headline-font-family: 'Montserrat', sans-serif;
-$base-font-size: 16px;
-$base-font-weight: 300;
-$small-font-size: $base-font-size * 0.875;
+$font-family-base: 'Raleway', sans-serif;
+$font-family-headline: 'Montserrat', sans-serif;
+$font-size-base: 16px;
+$font-weight-base: 300;
+$font-size-small: $font-size-base * 0.875;
+$font-size-code: $font-size-base * 0.800;
 $base-line-height: 1.5;
 
 $spacing-unit: 30px;

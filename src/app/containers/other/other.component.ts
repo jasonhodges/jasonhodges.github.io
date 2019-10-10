@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./other.component.scss']
 })
 export class OtherComponent implements OnInit {
+  layout = 'other';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
