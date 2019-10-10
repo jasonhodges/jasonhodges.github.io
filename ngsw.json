@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1570737529918,
+  "timestamp": 1570738215548,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -25,6 +25,8 @@
       "updateMode": "prefetch",
       "urls": [
         "/assets/about.md",
+        "/assets/icons/GitHub-Mark-64px.png",
+        "/assets/icons/Twitter_Social_Icon_Circle_Color.png",
         "/assets/icons/android-chrome-192x192.png",
         "/assets/icons/android-chrome-512x512.png",
         "/assets/icons/apple-touch-icon.png",
@@ -57,6 +59,8 @@
   "dataGroups": [],
   "hashTable": {
     "/assets/about.md": "5f87a5a015104ae1f016fda7ddd64d6966128e85",
+    "/assets/icons/GitHub-Mark-64px.png": "b00f47d766170d5814e4a1270a3c534642923207",
+    "/assets/icons/Twitter_Social_Icon_Circle_Color.png": "632414eb759476693c20599e8b4f0851d8a54251",
     "/assets/icons/android-chrome-192x192.png": "12f1acf63f4a2348e2655078570ef3257c805591",
     "/assets/icons/android-chrome-512x512.png": "eb5894f7a067e710b32cfd53e081fb3f9b77a152",
     "/assets/icons/apple-touch-icon.png": "8aa5b4fe6e4ccf1880879b2d9b173362ec71cf98",
