@@ -1,5 +1,5 @@
 <ng-container *ngFor="let post of postData">
-  <mat-card class="posts-card" (click)="navigateToPost(post.attributes.urlTitle)">
+  <mat-card *ngIf="post.attributes.layout  === 'post' && layout === 'post'" class="posts-card" (click)="navigateToPost(post.attributes.urlTitle)">
     <mat-card-header>
       <div mat-card-avatar [ngClass]="'header-image header-image__' + post.attributes.topic"></div>
       <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>
@@ -7,6 +7,15 @@
 
     <mat-card-content>
       <p>{{post.attributes.excerpt}}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card *ngIf="post.attributes.layout === 'other' && layout === 'other'" class="posts-card">
+    <mat-card-header>
+      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <a href="{{post.attributes.link}}">{{post.attributes.linkTitle}}</a>
     </mat-card-content>
   </mat-card>
 </ng-container>

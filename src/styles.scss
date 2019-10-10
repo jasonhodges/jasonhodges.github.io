@@ -35,10 +35,10 @@ header {
     letter-spacing: 0;
     line-height: 1;
     margin: 0;
-    font-family: $headline-font-family;
+    font-family: $font-family-headline;
   }
   &--description {
-    font-family: $base-font-family;
+    font-family: $font-family-base;
     position: inherit;
     margin: 0 -50% 0 0;
     left: 50%;

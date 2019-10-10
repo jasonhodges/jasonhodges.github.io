@@ -1,0 +1,18 @@
+@import "variables";
+.other-items {
+  background: $color-shadow;
+  padding: 8px;
+  border-radius: 4px;
+}
+p {
+
+}
+
+a[href^="https"]::before {
+  content: "• ";
+}
+
+a {
+  text-decoration: underline;
+  font-size: $font-size-small;
+}

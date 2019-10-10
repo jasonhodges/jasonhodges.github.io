@@ -1,6 +1,8 @@
 interface PostAttributes {
-  layout: string;
+  layout: string; // could be 'post' or 'other'
   title: string;
+  link?: string;
+  linkTitle?: string;
   topic: string;
   categories: string;
   permalink: string;

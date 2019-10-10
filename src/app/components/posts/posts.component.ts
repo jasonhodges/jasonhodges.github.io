@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Post } from '@jh/shared/post.model';
 import * as data from '@jh_posts/posts.json';
@@ -9,6 +9,7 @@ import * as data from '@jh_posts/posts.json';
   styleUrls: ['./posts.component.scss']
 })
 export class PostsComponent implements OnInit {
+  @Input() readonly layout;
   postData: Post[] = data.default;
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
@@ -18,7 +19,6 @@ export class PostsComponent implements OnInit {
   }
 
   navigateToPost(path: string) {
-    console.log('path: ', path);
     this.router.navigate(['/blog', path], { relativeTo: this.activatedRoute.parent });
   }
 }

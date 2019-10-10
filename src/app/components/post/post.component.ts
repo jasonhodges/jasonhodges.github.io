@@ -21,7 +21,6 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.data.subscribe((data) => {
-      console.log('data: ', data);
       this.permalink = data.post.attributes['permalink'];
       this.urlTitle = data.post.attributes['urlTitle'];
       this.seoService.updateDescription(data.post.attributes['seo__desc']);

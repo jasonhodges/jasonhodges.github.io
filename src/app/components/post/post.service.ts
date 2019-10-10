@@ -11,7 +11,6 @@ export class PostService {
   constructor() { }
 
   getPost(id: number | string): Observable<any> {
-    console.log('id: ', id ? id : '');
     return this.postData.find((posts: any) =>
       posts.attributes.urlTitle === id
     );

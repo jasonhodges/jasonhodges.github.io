@@ -13,7 +13,6 @@ export class PostResolverService implements Resolve<any> {
 
   resolve(route: ActivatedRouteSnapshot): Observable<any> {
     const id = route.paramMap.get('urlTitle');
-    console.log(id);
     return this.postService.getPost(route.paramMap.get('urlTitle'));
   }
 }
