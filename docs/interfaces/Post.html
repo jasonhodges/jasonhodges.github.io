@@ -223,8 +223,10 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">interface PostAttributes {
-  layout: string;
+  layout: string; // could be &#x27;post&#x27; or &#x27;other&#x27;
   title: string;
+  link?: string;
+  linkTitle?: string;
   topic: string;
   categories: string;
   permalink: string;

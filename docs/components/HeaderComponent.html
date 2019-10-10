@@ -238,10 +238,9 @@ export class HeaderComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;header&gt;
-  &lt;div style&#x3D;&quot;text-align:center&quot;&gt;
-    &lt;img width&#x3D;&quot;30&quot;
-         alt&#x3D;&quot;Angular Logo&quot;
-         src&#x3D;&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg&#x3D;&#x3D;&quot;&gt;
+  &lt;div class&#x3D;&quot;icon-container&quot;&gt;
+    &lt;a href&#x3D;&quot;https://github.com/jasonhodges&quot; class&#x3D;&quot;social-icon social-icon__github&quot;&gt;&lt;/a&gt;
+    &lt;a href&#x3D;&quot;https://twitter.com/_jasonhodges&quot; class&#x3D;&quot;social-icon social-icon__twitter&quot;&gt;&lt;/a&gt;
   &lt;/div&gt;
   &lt;jh-nav&gt;&lt;/jh-nav&gt;
 &lt;/header&gt;
@@ -257,7 +256,26 @@ export class HeaderComponent implements OnInit {
   padding: 20px 0;
 }
 
+.icon-container {
+  text-align: center;
+  display: flex;
+}
 
+.social-icon {
+  display: block;
+  height: 2em;
+  width: 2em;
+  background-size: cover;
+  margin: auto;
+  &amp;__github {
+    background-image: url(&#x27;/assets/icons/GitHub-Mark-64px.png&#x27;);
+  }
+
+  &amp;__twitter {
+    background-image: url(&#x27;/assets/icons/Twitter_Social_Icon_Circle_Color.png&#x27;);
+
+  }
+}
 </code></pre>
     </div>
 
@@ -286,7 +304,7 @@ export class HeaderComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><header>  <div style="text-align:center">    <img width="30"         alt="Angular Logo"         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">  </div>  <jh-nav></jh-nav></header></div>'
+        var COMPONENT_TEMPLATE = '<div><header>  <div class="icon-container">    <a href="https://github.com/jasonhodges" class="social-icon social-icon__github"></a>    <a href="https://twitter.com/_jasonhodges" class="social-icon social-icon__twitter"></a>  </div>  <jh-nav></jh-nav></header></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};

@@ -515,7 +515,6 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.data.subscribe((data) &#x3D;&gt; {
-      console.log(&#x27;data: &#x27;, data);
       this.permalink &#x3D; data.post.attributes[&#x27;permalink&#x27;];
       this.urlTitle &#x3D; data.post.attributes[&#x27;urlTitle&#x27;];
       this.seoService.updateDescription(data.post.attributes[&#x27;seo__desc&#x27;]);
