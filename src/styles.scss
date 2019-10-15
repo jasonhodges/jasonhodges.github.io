@@ -55,12 +55,6 @@ header {
   }
 }
 
-// Footer styles
-$footer-height: $height-footer;
-$footer-bgColor: $color-primary-1;
-footer {
-  background-color: $footer-bgColor;
-}
 
 pre::after {
   content: "";
