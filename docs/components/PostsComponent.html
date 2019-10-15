@@ -461,7 +461,7 @@ export class PostsComponent implements OnInit {
     &lt;/mat-card-header&gt;
 
     &lt;mat-card-content&gt;
-      &lt;a href&#x3D;&quot;{{post.attributes.link}}&quot;&gt;{{post.attributes.linkTitle}}&lt;/a&gt;
+      &lt;a href&#x3D;&quot;{{post.attributes.link}}&quot; target&#x3D;&quot;_blank&quot;&gt;{{post.attributes.linkTitle}}&lt;/a&gt;
     &lt;/mat-card-content&gt;
   &lt;/mat-card&gt;
 &lt;/ng-container&gt;
@@ -518,7 +518,7 @@ mat-card-content {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ng-container *ngFor="let post of postData">  <mat-card *ngIf="post.attributes.layout  === \'post\' && layout === \'post\'" class="posts-card" (click)="navigateToPost(post.attributes.urlTitle)">    <mat-card-header>      <div mat-card-avatar [ngClass]="\'header-image header-image__\' + post.attributes.topic"></div>      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>    </mat-card-header>    <mat-card-content>      <p>{{post.attributes.excerpt}}</p>    </mat-card-content>  </mat-card>  <mat-card *ngIf="post.attributes.layout === \'other\' && layout === \'other\'" class="posts-card">    <mat-card-header>      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>    </mat-card-header>    <mat-card-content>      <a href="{{post.attributes.link}}">{{post.attributes.linkTitle}}</a>    </mat-card-content>  </mat-card></ng-container></div>'
+        var COMPONENT_TEMPLATE = '<div><ng-container *ngFor="let post of postData">  <mat-card *ngIf="post.attributes.layout  === \'post\' && layout === \'post\'" class="posts-card" (click)="navigateToPost(post.attributes.urlTitle)">    <mat-card-header>      <div mat-card-avatar [ngClass]="\'header-image header-image__\' + post.attributes.topic"></div>      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>    </mat-card-header>    <mat-card-content>      <p>{{post.attributes.excerpt}}</p>    </mat-card-content>  </mat-card>  <mat-card *ngIf="post.attributes.layout === \'other\' && layout === \'other\'" class="posts-card">    <mat-card-header>      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>    </mat-card-header>    <mat-card-content>      <a href="{{post.attributes.link}}" target="_blank">{{post.attributes.linkTitle}}</a>    </mat-card-content>  </mat-card></ng-container></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PostsComponent'};
