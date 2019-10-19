@@ -1,11 +1,24 @@
-@import '../../styles/mixins/media-query';
+@import 'media-query';
+@import 'variables';
+
 $mat-card-padding: 24px;
 $mat-card-avatar: 40px;
 $mat-card-header-text-margin: 8px;
 
+a:hover {
+  text-decoration: none;
+}
+
+.posts-card {
+  &__post {
+    &:hover {
+      background-color: $color-grey-light;
+    }
+  }
+}
 .header-image {
   &__angular {
-    background-image: url('/assets/images/angular.png');
+    background-image: $logo_angular;
     background-size: cover;
   }
 }

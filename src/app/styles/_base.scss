@@ -16,8 +16,8 @@ dl, dd, ol, ul, figure {
 body {
   height: $height-body;
   font: $font-weight-base #{$font-size-base}/#{$base-line-height} $font-family-base;
-  color: $text-color;
-  background-color: $background-color;
+  color: $color-text;
+  background-color: $color-background;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -81,15 +81,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $grey;
+  color: $color-grey;
   text-decoration: none;
 
   &:visited {
-    color: darken($grey-color-dark, 15%);
+    color: darken($color-grey-dark, 15%);
   }
 
   &:hover {
-    color: $text-color;
+    color: $color-text;
     text-decoration: underline;
   }
 }
@@ -98,8 +98,8 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: $color-grey;
+  border-left: 4px solid $color-grey-light;
   padding-left: $spacing-unit / 2;
   font-size: 18px;
   letter-spacing: -1px;
@@ -174,7 +174,7 @@ pre {
     vertical-align: middle;
 
     path {
-      fill: $grey-color;
+      fill: $color-grey;
     }
   }
 }
