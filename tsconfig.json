@@ -10,6 +10,9 @@
       "~jh/variables": [
         "app/styles/variables.scss"
       ],
+      "~jh/media-query": [
+        "app/styles/mixins/media-query.scss"
+      ],
       "@jh_posts/*": [
         "assets/posts/*"
       ]

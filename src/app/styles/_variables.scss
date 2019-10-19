@@ -2,26 +2,21 @@ $prefix: 'jh';
 /*----------------*\
     $colors
 \*----------------*/
-$white: #fff;
-$brown: #342819;
-$green: #7d9ea3;
-$black: #2b2b2b;
-$greenlt: tint($green, 30%);
-$greendk: shade($green, 30%);
-$grey: #3d403f;
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
-
-$brand-color: $green;
-$text-color: $white;
-$nav-text-color: $grey;
-
-$color-primary-1: #d9d9d9;
+$color-white: #fff;
 $color-light-1: #eee;
+$color-primary-1: #d9d9d9;
+
+$color-grey: #3d403f;
+$color-grey-light: lighten($color-grey, 60%);
+$color-grey-dark: darken($color-grey, 25%);
+
+$color-black: #2b2b2b;
+
+$color-text: $color-grey-dark;
+$color-text-nav: $color-grey;
+
+$color-background: $color-primary-1;
 $color-shadow: rgba(90, 90, 90, 0.4);
-$text-color: $grey-color-dark;
-$background-color: $color-primary-1;
 
 /*----------------*\
     $fonts

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { AppMaterialModule } from '@jh/app-material.module';
 import { PostComponent } from '@jh/components/post/post.component';
 import { PostsComponent } from '@jh/components/posts/posts.component';
@@ -25,7 +26,8 @@ import { OtherComponent } from './other/other.component';
         }
       }
     }),
-    DisqusModule.forRoot('jasonhodges-codes')
+    DisqusModule.forRoot('jasonhodges-codes'),
+    RouterModule
   ],
   declarations: [
     AboutComponent,
@@ -35,7 +37,7 @@ import { OtherComponent } from './other/other.component';
     PostsComponent,
     OtherComponent
   ],
-  exports: []
+  exports: [RouterModule]
 })
 export class ContainersModule {
 }

@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { AppMaterialModule } from '@ngx-site/app-material.module';
+import { AppMaterialModule } from '@jh/app-material.module';
 
 import { NavComponent } from './nav.component';
 

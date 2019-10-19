@@ -25,14 +25,17 @@
             "stylePreprocessorOptions": {
               "includePaths": [
                 "node_modules",
-                "src/app/styles"
+                "src/app/styles",
+                "src/app/styles/mixins"
               ]
             },
             "assets": [
               "src/favicon.ico",
               "src/assets",
               "src/assets/posts",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/app/styles/normalize.css",

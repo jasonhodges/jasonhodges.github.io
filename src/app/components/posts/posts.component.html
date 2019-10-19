@@ -1,21 +1,27 @@
 <ng-container *ngFor="let post of postData">
-  <mat-card *ngIf="post.attributes.layout  === 'post' && layout === 'post'" class="posts-card" (click)="navigateToPost(post.attributes.urlTitle)">
-    <mat-card-header>
-      <div mat-card-avatar [ngClass]="'header-image header-image__' + post.attributes.topic"></div>
-      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>
-    </mat-card-header>
+  <ng-container *ngIf="post.attributes.layout === 'post' && layout === 'post'">
+    <a [routerLink]="['/blog', post.attributes.urlTitle]">
+      <mat-card class="posts-card posts-card__post">
+        <mat-card-header>
+          <div mat-card-avatar [ngClass]="'header-image header-image__' + post.attributes.topic"></div>
+          <mat-card-title class="posts-card--title">{{ post.attributes.title }}</mat-card-title>
+        </mat-card-header>
 
-    <mat-card-content>
-      <p>{{post.attributes.excerpt}}</p>
-    </mat-card-content>
-  </mat-card>
-  <mat-card *ngIf="post.attributes.layout === 'other' && layout === 'other'" class="posts-card">
-    <mat-card-header>
-      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>
-    </mat-card-header>
+        <mat-card-content>
+          <p>{{ post.attributes.excerpt }}</p>
+        </mat-card-content>
+      </mat-card>
+    </a>
+  </ng-container>
+  <ng-container *ngIf="post.attributes.layout === 'other' && layout === 'other'">
+    <mat-card class="posts-card posts-card__other">
+      <mat-card-header>
+        <mat-card-title class="posts-card--title">{{ post.attributes.title }}</mat-card-title>
+      </mat-card-header>
 
-    <mat-card-content>
-      <a href="{{post.attributes.link}}" target="_blank">{{post.attributes.linkTitle}}</a>
-    </mat-card-content>
-  </mat-card>
+      <mat-card-content>
+        <a href="{{ post.attributes.link }}" target="_blank">{{ post.attributes.linkTitle }}</a>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
 </ng-container>
