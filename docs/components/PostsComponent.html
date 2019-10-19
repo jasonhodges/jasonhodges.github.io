@@ -285,8 +285,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="21"
-                            class="link-to-prism">src/app/components/posts/posts.component.ts:21</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/posts/posts.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -355,8 +355,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="18"
-                            class="link-to-prism">src/app/components/posts/posts.component.ts:18</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/components/posts/posts.component.ts:17</a></div>
                 </td>
             </tr>
 
@@ -424,17 +424,15 @@ import * as data from &#x27;@jh_posts/posts.json&#x27;;
 @Component({
   selector: &#x27;jh-posts&#x27;,
   templateUrl: &#x27;./posts.component.html&#x27;,
-  styleUrls: [&#x27;./posts.component.scss&#x27;]
+  styleUrls: [&#x27;./posts.component.scss&#x27;],
 })
 export class PostsComponent implements OnInit {
   @Input() readonly layout;
   postData: Post[] &#x3D; data.default;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {
-  }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   navigateToPost(path: string) {
     this.router.navigate([&#x27;/blog&#x27;, path], { relativeTo: this.activatedRoute.parent });
@@ -445,25 +443,31 @@ export class PostsComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;ng-container *ngFor&#x3D;&quot;let post of postData&quot;&gt;
-  &lt;mat-card *ngIf&#x3D;&quot;post.attributes.layout  &#x3D;&#x3D;&#x3D; &#x27;post&#x27; &amp;&amp; layout &#x3D;&#x3D;&#x3D; &#x27;post&#x27;&quot; class&#x3D;&quot;posts-card&quot; (click)&#x3D;&quot;navigateToPost(post.attributes.urlTitle)&quot;&gt;
-    &lt;mat-card-header&gt;
-      &lt;div mat-card-avatar [ngClass]&#x3D;&quot;&#x27;header-image header-image__&#x27; + post.attributes.topic&quot;&gt;&lt;/div&gt;
-      &lt;mat-card-title class&#x3D;&quot;posts-card--title&quot;&gt;{{post.attributes.title}}&lt;/mat-card-title&gt;
-    &lt;/mat-card-header&gt;
+  &lt;ng-container *ngIf&#x3D;&quot;post.attributes.layout &#x3D;&#x3D;&#x3D; &#x27;post&#x27; &amp;&amp; layout &#x3D;&#x3D;&#x3D; &#x27;post&#x27;&quot;&gt;
+    &lt;a [routerLink]&#x3D;&quot;[&#x27;/blog&#x27;, post.attributes.urlTitle]&quot;&gt;
+      &lt;mat-card class&#x3D;&quot;posts-card posts-card__post&quot;&gt;
+        &lt;mat-card-header&gt;
+          &lt;div mat-card-avatar [ngClass]&#x3D;&quot;&#x27;header-image header-image__&#x27; + post.attributes.topic&quot;&gt;&lt;/div&gt;
+          &lt;mat-card-title class&#x3D;&quot;posts-card--title&quot;&gt;{{ post.attributes.title }}&lt;/mat-card-title&gt;
+        &lt;/mat-card-header&gt;
 
-    &lt;mat-card-content&gt;
-      &lt;p&gt;{{post.attributes.excerpt}}&lt;/p&gt;
-    &lt;/mat-card-content&gt;
-  &lt;/mat-card&gt;
-  &lt;mat-card *ngIf&#x3D;&quot;post.attributes.layout &#x3D;&#x3D;&#x3D; &#x27;other&#x27; &amp;&amp; layout &#x3D;&#x3D;&#x3D; &#x27;other&#x27;&quot; class&#x3D;&quot;posts-card&quot;&gt;
-    &lt;mat-card-header&gt;
-      &lt;mat-card-title class&#x3D;&quot;posts-card--title&quot;&gt;{{post.attributes.title}}&lt;/mat-card-title&gt;
-    &lt;/mat-card-header&gt;
+        &lt;mat-card-content&gt;
+          &lt;p&gt;{{ post.attributes.excerpt }}&lt;/p&gt;
+        &lt;/mat-card-content&gt;
+      &lt;/mat-card&gt;
+    &lt;/a&gt;
+  &lt;/ng-container&gt;
+  &lt;ng-container *ngIf&#x3D;&quot;post.attributes.layout &#x3D;&#x3D;&#x3D; &#x27;other&#x27; &amp;&amp; layout &#x3D;&#x3D;&#x3D; &#x27;other&#x27;&quot;&gt;
+    &lt;mat-card class&#x3D;&quot;posts-card posts-card__other&quot;&gt;
+      &lt;mat-card-header&gt;
+        &lt;mat-card-title class&#x3D;&quot;posts-card--title&quot;&gt;{{ post.attributes.title }}&lt;/mat-card-title&gt;
+      &lt;/mat-card-header&gt;
 
-    &lt;mat-card-content&gt;
-      &lt;a href&#x3D;&quot;{{post.attributes.link}}&quot; target&#x3D;&quot;_blank&quot;&gt;{{post.attributes.linkTitle}}&lt;/a&gt;
-    &lt;/mat-card-content&gt;
-  &lt;/mat-card&gt;
+      &lt;mat-card-content&gt;
+        &lt;a href&#x3D;&quot;{{ post.attributes.link }}&quot; target&#x3D;&quot;_blank&quot;&gt;{{ post.attributes.linkTitle }}&lt;/a&gt;
+      &lt;/mat-card-content&gt;
+    &lt;/mat-card&gt;
+  &lt;/ng-container&gt;
 &lt;/ng-container&gt;
 </code></pre>
     </div>
@@ -472,14 +476,27 @@ export class PostsComponent implements OnInit {
                 <p class="comment">
                     <code>./posts.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../styles/mixins/media-query&#x27;;
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;media-query&#x27;;
+@import &#x27;variables&#x27;;
+
 $mat-card-padding: 24px;
 $mat-card-avatar: 40px;
 $mat-card-header-text-margin: 8px;
 
+a:hover {
+  text-decoration: none;
+}
+
+.posts-card {
+  &amp;__post {
+    &amp;:hover {
+      background-color: $color-grey-light;
+    }
+  }
+}
 .header-image {
   &amp;__angular {
-    background-image: url(&#x27;/assets/images/angular.png&#x27;);
+    background-image: $logo_angular;
     background-size: cover;
   }
 }
@@ -518,7 +535,7 @@ mat-card-content {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><ng-container *ngFor="let post of postData">  <mat-card *ngIf="post.attributes.layout  === \'post\' && layout === \'post\'" class="posts-card" (click)="navigateToPost(post.attributes.urlTitle)">    <mat-card-header>      <div mat-card-avatar [ngClass]="\'header-image header-image__\' + post.attributes.topic"></div>      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>    </mat-card-header>    <mat-card-content>      <p>{{post.attributes.excerpt}}</p>    </mat-card-content>  </mat-card>  <mat-card *ngIf="post.attributes.layout === \'other\' && layout === \'other\'" class="posts-card">    <mat-card-header>      <mat-card-title class="posts-card--title">{{post.attributes.title}}</mat-card-title>    </mat-card-header>    <mat-card-content>      <a href="{{post.attributes.link}}" target="_blank">{{post.attributes.linkTitle}}</a>    </mat-card-content>  </mat-card></ng-container></div>'
+        var COMPONENT_TEMPLATE = '<div><ng-container *ngFor="let post of postData">  <ng-container *ngIf="post.attributes.layout === \'post\' && layout === \'post\'">    <a [routerLink]="[\'/blog\', post.attributes.urlTitle]">      <mat-card class="posts-card posts-card__post">        <mat-card-header>          <div mat-card-avatar [ngClass]="\'header-image header-image__\' + post.attributes.topic"></div>          <mat-card-title class="posts-card--title">{{ post.attributes.title }}</mat-card-title>        </mat-card-header>        <mat-card-content>          <p>{{ post.attributes.excerpt }}</p>        </mat-card-content>      </mat-card>    </a>  </ng-container>  <ng-container *ngIf="post.attributes.layout === \'other\' && layout === \'other\'">    <mat-card class="posts-card posts-card__other">      <mat-card-header>        <mat-card-title class="posts-card--title">{{ post.attributes.title }}</mat-card-title>      </mat-card-header>      <mat-card-content>        <a href="{{ post.attributes.link }}" target="_blank">{{ post.attributes.linkTitle }}</a>      </mat-card-content>    </mat-card>  </ng-container></ng-container></div>'
     var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'jh-about'},{'name': 'AppComponent', 'selector': 'jh-root'},{'name': 'HeaderComponent', 'selector': 'jh-header'},{'name': 'HomeComponent', 'selector': 'jh-home'},{'name': 'NavComponent', 'selector': 'jh-nav'},{'name': 'OtherComponent', 'selector': 'jh-other'},{'name': 'PostComponent', 'selector': 'jh-site-post'},{'name': 'PostsComponent', 'selector': 'jh-posts'},{'name': 'SidenavComponent', 'selector': 'jh-site-sidenav'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PostsComponent'};

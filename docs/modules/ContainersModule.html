@@ -245,6 +245,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { CommonModule } from &#x27;@angular/common&#x27;;
 import { HttpClient, HttpClientModule } from &#x27;@angular/common/http&#x27;;
 import { NgModule } from &#x27;@angular/core&#x27;;
+import { RouterModule } from &#x27;@angular/router&#x27;;
 import { AppMaterialModule } from &#x27;@jh/app-material.module&#x27;;
 import { PostComponent } from &#x27;@jh/components/post/post.component&#x27;;
 import { PostsComponent } from &#x27;@jh/components/posts/posts.component&#x27;;
@@ -269,7 +270,8 @@ import { OtherComponent } from &#x27;./other/other.component&#x27;;
         }
       }
     }),
-    DisqusModule.forRoot(&#x27;jasonhodges-codes&#x27;)
+    DisqusModule.forRoot(&#x27;jasonhodges-codes&#x27;),
+    RouterModule
   ],
   declarations: [
     AboutComponent,
@@ -279,7 +281,7 @@ import { OtherComponent } from &#x27;./other/other.component&#x27;;
     PostsComponent,
     OtherComponent
   ],
-  exports: []
+  exports: [RouterModule]
 })
 export class ContainersModule {
 }

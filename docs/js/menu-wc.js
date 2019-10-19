@@ -87,13 +87,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ContainersModule.html" data-type="entity-link">ContainersModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-ContainersModule-611b4719323859a63dec6a202b08b71d"' : 'data-target="#xs-components-links-module-ContainersModule-611b4719323859a63dec6a202b08b71d"' }>
+                                            'data-target="#components-links-module-ContainersModule-106bd74f86313b3ea917e9154f26a725"' : 'data-target="#xs-components-links-module-ContainersModule-106bd74f86313b3ea917e9154f26a725"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ContainersModule-611b4719323859a63dec6a202b08b71d"' :
-                                            'id="xs-components-links-module-ContainersModule-611b4719323859a63dec6a202b08b71d"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ContainersModule-106bd74f86313b3ea917e9154f26a725"' :
+                                            'id="xs-components-links-module-ContainersModule-106bd74f86313b3ea917e9154f26a725"' }>
                                             <li class="link">
                                                 <a href="components/AboutComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">AboutComponent</a>
