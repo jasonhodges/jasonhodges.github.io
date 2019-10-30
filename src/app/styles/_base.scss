@@ -122,6 +122,9 @@ code {
   padding: 1px 5px;
 }
 
+p > code {
+  background: $color-light-1;
+}
 pre {
   padding: 8px 12px;
   overflow-x: auto;
