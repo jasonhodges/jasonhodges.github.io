@@ -15,7 +15,8 @@
     "publish:full": "yarn build:publish && yarn docs && yarn docs:copy && yarn run publish",
     "docs": "./node_modules/.bin/compodoc -p src/tsconfig.app.json",
     "docs:copy": "cp -R ./documentation ./dist/docs",
-    "dirparse": "node ./config/dir-parse.js"
+    "dirparse": "node ./config/dir-parse.js",
+    "ngsw-config": "ngsw-config dist ngsw-config.json https://jasonhodges.codes"
   },
   "private": true,
   "config": {
