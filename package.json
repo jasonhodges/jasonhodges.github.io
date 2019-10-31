@@ -6,7 +6,7 @@
     "start": "ng serve",
     "hmr": "ng serve --configuration hmr",
     "build": "ng build",
-    "build:publish": "ng build --prod --base-href './'",
+    "build:publish": "ng build --prod --base-href '/'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -16,7 +16,7 @@
     "docs": "./node_modules/.bin/compodoc -p src/tsconfig.app.json",
     "docs:copy": "cp -R ./documentation ./dist/docs",
     "dirparse": "node ./config/dir-parse.js",
-    "ngsw-config": "ngsw-config dist ngsw-config.json ./"
+    "ngsw-config": "ngsw-config dist ngsw-config.json /"
   },
   "private": true,
   "config": {
