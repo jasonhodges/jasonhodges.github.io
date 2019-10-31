@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1572549015711,
+  "timestamp": 1572550415486,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -103,7 +103,7 @@
     "/assets/images/angular.png": "f0191f8d50460c560d9e28b29e849b4f44ed0bf4",
     "/assets/posts/posts.json": "cf246c05606a7caa0fec6f6a1c7e68a37a76eaf1",
     "/favicon.ico": "578cfcfca0b2022ccbc6a024997e4111913e2e71",
-    "/index.html": "384bcf61feebb761f825c7925df3079e77737aa0",
+    "/index.html": "babd804c8fd9933721f586da76f112ba52ec63fb",
     "/main.d56627d8d96a88fea581.js": "e65258434949ae0115c8245347c51c1d2a8fcd5d",
     "/ngsw-worker.js": "8a79a07e4fb131954e549df5998b6ee8176088bd",
     "/polyfills-es5.d1345e1e3de6ae44e9fa.js": "e0e37d7a7259dd3814f1d6787b340d6292bf4407",
