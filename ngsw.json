@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1572550724430,
+  "timestamp": 1572551639596,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -8,6 +8,7 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
+        "/404.html",
         "/assets/about.md",
         "/assets/posts/posts.json",
         "/favicon.ico",
@@ -69,6 +70,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/404.html": "eefbd2903eb8ccc0654bf543ecd1c78cfdc7168d",
     "/assets/about.md": "5f87a5a015104ae1f016fda7ddd64d6966128e85",
     "/assets/icons/GitHub-Mark-64px.png": "b00f47d766170d5814e4a1270a3c534642923207",
     "/assets/icons/Twitter_Social_Icon_Circle_Color.png": "632414eb759476693c20599e8b4f0851d8a54251",
@@ -103,7 +105,7 @@
     "/assets/images/angular.png": "f0191f8d50460c560d9e28b29e849b4f44ed0bf4",
     "/assets/posts/posts.json": "cf246c05606a7caa0fec6f6a1c7e68a37a76eaf1",
     "/favicon.ico": "578cfcfca0b2022ccbc6a024997e4111913e2e71",
-    "/index.html": "babd804c8fd9933721f586da76f112ba52ec63fb",
+    "/index.html": "fff2651a46e0ad5e66d44696bef23486233bdc85",
     "/main.d56627d8d96a88fea581.js": "e65258434949ae0115c8245347c51c1d2a8fcd5d",
     "/ngsw-worker.js": "8a79a07e4fb131954e549df5998b6ee8176088bd",
     "/polyfills-es5.d1345e1e3de6ae44e9fa.js": "e0e37d7a7259dd3814f1d6787b340d6292bf4407",
