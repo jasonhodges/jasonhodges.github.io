@@ -1,52 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-  <base href="/">
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <title>jasonhodges.codes</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="canonical" href="https://jasonhodges.codes">
-  <meta property="og:site_name" content="Jason Hodges">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Jason Hodges">
-  <meta name="og:description" content="Jason Hodges' personal blog on Angular coding">
-  <meta content="@_jasonhodges" name="twitter:creator">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Jason Hodges">
-  <meta name="twitter:url" content="https://jasonhodges.codes">
-  <meta name="twitter:description" content="Jason Hodges' personal blog on Angular coding">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128184468-1"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-128184468-1');
-  </script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1976d2">
+    <title>jasonhodges.codes</title>
+    <!-- This stores the URL the user was attempting to go to in sessionStorage,
+    and then redirects all 404 responses to the app’s index.html page -->
+    <!-- See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='https://jasonhodges.codes/'">
 </head>
 <body>
-<!-- Github Pages hack to allow SPA refresh without receiving 404. -->
-<!--<script>-->
-<!--  (function () {-->
-<!--    // Retrieve the URL the user was trying to access when receiving the 404.-->
-<!--    const redirect = sessionStorage.redirect;-->
-<!--    // Remove the URL from sessionStorage.-->
-<!--    delete sessionStorage.redirect;-->
-<!--    // Check if we actually need to redirect.-->
-<!--    if (redirect && redirect !== location.href) {-->
-<!--      // We need to redirect to the URL the user was trying to access.-->
-<!--      history.replaceState(null, null, redirect);-->
-<!--    }-->
-<!--  })();-->
-<!--</script>-->
-<!-- /Github Pages hack. -->
-  <jh-root class="container"></jh-root>
-  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
