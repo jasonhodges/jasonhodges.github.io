@@ -19,9 +19,9 @@ cache:
 
 script:
   - ng lint
-  - ng build --prod
   - yarn docs
   - yarn docs:copy
+  - ng deploy
 
 env:
   global:

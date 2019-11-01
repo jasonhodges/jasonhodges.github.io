@@ -16,7 +16,8 @@
     "docs": "./node_modules/.bin/compodoc -p src/tsconfig.app.json",
     "docs:copy": "cp -R ./documentation ./dist/docs",
     "dirparse": "node ./config/dir-parse.js",
-    "ngsw-config": "ngsw-config dist .removed/ngsw-config.json /"
+    "ngsw-config": "ngsw-config dist .removed/ngsw-config.json /",
+    "firebase:deploy": "ng deploy"
   },
   "private": true,
   "config": {
@@ -30,6 +31,7 @@
     "@angular/common": "^8.2.9",
     "@angular/compiler": "^8.2.9",
     "@angular/core": "^8.2.9",
+    "@angular/fire": "^5.2.1",
     "@angular/forms": "^8.2.9",
     "@angular/http": "^7.2.15",
     "@angular/material": "^8.2.2",
@@ -41,7 +43,8 @@
     "hammerjs": "^2.0.8",
     "ngx-disqus": "^2.4.3",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.10.2"
+    "zone.js": "^0.10.2",
+    "firebase": ">= 5.5.7 <7"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.8",
@@ -65,10 +68,15 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "lodash": "^4.17.10",
     "ngx-markdown": "^8.2.0",
-    "protractor": "~5.4.2",
     "prettier": "^1.18.2",
+    "protractor": "~5.4.2",
     "ts-node": "~8.4.1",
     "tslint": "~5.20.0",
-    "typescript": "3.5.2"
+    "typescript": "3.5.2",
+    "@angular-devkit/architect": "<0.900 || ^0.900.0-0 || ^9.0.0-0",
+    "firebase-tools": "^6.10.0",
+    "fuzzy": "^0.1.3",
+    "inquirer": "^6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1"
   }
 }

@@ -1,20 +1,20 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "./",
     "importHelpers": true,
     "paths": {
       "@jh/*": [
-        "app/*"
+        "src/app/*"
       ],
       "~jh/variables": [
-        "app/styles/variables.scss"
+        "src/app/styles/variables.scss"
       ],
       "~jh/media-query": [
-        "app/styles/mixins/media-query.scss"
+        "src/app/styles/mixins/media-query.scss"
       ],
       "@jh_posts/*": [
-        "assets/posts/*"
+        "src/assets/posts/*"
       ]
     },
     "outDir": "./dist/out-tsc",
