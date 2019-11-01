@@ -20,7 +20,6 @@ cache:
 script:
   - ng lint
   - ng build --prod
-  - yarn ngsw-config
   - yarn docs
   - yarn docs:copy
 

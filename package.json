@@ -16,7 +16,7 @@
     "docs": "./node_modules/.bin/compodoc -p src/tsconfig.app.json",
     "docs:copy": "cp -R ./documentation ./dist/docs",
     "dirparse": "node ./config/dir-parse.js",
-    "ngsw-config": "ngsw-config dist ngsw-config.json /"
+    "ngsw-config": "ngsw-config dist .removed/ngsw-config.json /"
   },
   "private": true,
   "config": {
@@ -35,7 +35,6 @@
     "@angular/material": "^8.2.2",
     "@angular/platform-browser": "^8.2.9",
     "@angular/platform-browser-dynamic": "^8.2.9",
-    "@angular/pwa": "^0.803.8",
     "@angular/router": "^8.2.9",
     "@angular/service-worker": "^8.2.9",
     "core-js": "^3.2.1",
