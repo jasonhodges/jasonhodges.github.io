@@ -2,35 +2,39 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "importHelpers": true,
-    "paths": {
-      "@jh/*": [
-        "src/app/*"
-      ],
-      "~jh/variables": [
-        "src/app/styles/variables.scss"
-      ],
-      "~jh/media-query": [
-        "src/app/styles/mixins/media-query.scss"
-      ],
-      "@jh_posts/*": [
-        "src/assets/posts/*"
-      ]
-    },
     "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022", "dom"],
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
-    "target": "es5",
     "typeRoots": [
       "node_modules/@types"
     ],
-    "lib": [
-      "es2017",
-      "dom"
-    ]
-  }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "references": [
+    { "path": "tsconfig.app.json" },
+    { "path": "tsconfig.spec.json" }
+  ]
 }

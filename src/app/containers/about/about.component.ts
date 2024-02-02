@@ -1,13 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { MarkdownComponent } from 'ngx-markdown';
 @Component({
   selector: 'jh-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <h1>About me</h1>
+    <markdown [src]="'./about.md'" ></markdown>
+  `,
+  imports: [
+    MarkdownComponent,
+  ],
 })
-export class AboutComponent implements OnInit {
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class AboutComponent {
+constructor() {
+  debugger
+}
 
 }

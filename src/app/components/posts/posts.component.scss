@@ -1,5 +1,5 @@
-@import 'media-query';
-@import 'variables';
+@import '../../../styles/mixins/media-query';
+@import '../../../styles/variables';
 
 $mat-card-padding: 24px;
 $mat-card-avatar: 40px;

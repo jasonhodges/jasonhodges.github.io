@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import * as data from '@jh_posts/posts.json';
+import { Post } from '../../shared/post.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PostService {
-  postData = data.default;
+  jsonUrl = 'assets/posts/posts.json';
 
-  constructor() { }
+  constructor() {}
 
-  getPost(id: number | string): Observable<any> {
-    return this.postData.find((posts: any) =>
-      posts.attributes.urlTitle === id
-    );
+  async getPost(id: string | null): Promise<any> {
+    const response = await fetch(this.jsonUrl);
+    const json = await response.json();
+    return json.find((posts: Post) => posts.attributes.urlTitle === id);
   }
 }

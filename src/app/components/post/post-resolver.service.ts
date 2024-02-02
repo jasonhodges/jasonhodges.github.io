@@ -1,18 +1,18 @@
-import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
-import { PostService } from '@jh/components/post/post.service';
+import { inject, Injectable } from '@angular/core';
+import { ActivatedRouteSnapshot, ResolveFn, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
+import { PostService } from './post.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PostResolverService implements Resolve<any> {
+export class PostResolverService{
 
-  constructor(private postService: PostService) {
-  }
-
-  resolve(route: ActivatedRouteSnapshot): Observable<any> {
-    const id = route.paramMap.get('urlTitle');
-    return this.postService.getPost(route.paramMap.get('urlTitle'));
-  }
 }
+
+export const postResolver: ResolveFn<any> = (
+  route: ActivatedRouteSnapshot,
+  state: RouterStateSnapshot,
+) => {
+  return inject(PostService).getPost(route.paramMap.get('urlTitle')!);
+};

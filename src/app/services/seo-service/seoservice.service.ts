@@ -6,7 +6,7 @@ import { Meta, Title } from '@angular/platform-browser';
   providedIn: 'root'
 })
 export class SEOService {
-  siteUrl = 'https://jasonhodges.codes';
+  siteUrl = 'https://jasonhodges.dev';
   personalTitle = ' | Jason Hodges';
 
   constructor(private title: Title, private meta: Meta) {

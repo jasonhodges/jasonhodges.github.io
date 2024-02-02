@@ -1,17 +1,25 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './containers/header/header.component';
 
 @Component({
-  selector: 'jh-root',
-  templateUrl: './app.component.html',
+  selector: 'jhd-root',
+  standalone: true,
+  template: `
+    <jh-header></jh-header>
+
+    <div class="wrapper jh-content-container">
+      <router-outlet></router-outlet>
+    </div>
+  `,
   styleUrls: ['./app.component.scss'],
-  preserveWhitespaces: true
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+  ],
+  preserveWhitespaces: true,
 })
 export class AppComponent {
-  title = 'JasonHodges.codes';
-
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
-  }
-
+  title = 'JasonHodges.dev';
 
 }

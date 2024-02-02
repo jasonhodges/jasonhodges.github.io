@@ -17,6 +17,6 @@ interface PostAttributes {
 export interface Post {
   attributes: PostAttributes;
   body: string;
-  frontMatter: string;
+  frontmatter: string;
   path: string;
 }
