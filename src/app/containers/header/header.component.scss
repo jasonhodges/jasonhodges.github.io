@@ -1,0 +1,25 @@
+header {
+  background-color: unset;
+  padding: 20px 0;
+}
+
+.icon-container {
+  text-align: center;
+  display: flex;
+}
+
+.social-icon {
+  display: block;
+  height: 2em;
+  width: 2em;
+  background-size: cover;
+  margin: auto;
+  &__github {
+    background-image: url('/assets/icons/GitHub-Mark-64px.png');
+  }
+
+  &__twitter {
+    background-image: url('/assets/icons/Twitter_Social_Icon_Circle_Color.png');
+
+  }
+}

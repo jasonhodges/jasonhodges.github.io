@@ -1,0 +1,11 @@
+[ngx-site-nav] {
+  nav.nav.mat-tab-nav-bar.mat-primary {
+    .mat-tab-links {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+//::ng-deep .mat-tab-links {
+//    justify-content: space-evenly !important;
+//  }

@@ -1,0 +1,38 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/404.html",
+          "/manifest,json",
+          "/assets/about.md",
+          "/assets/posts/posts.json",
+          "/*.css",
+          "/*.js"
+        ]
+      }
+    },
+    {
+      "name": "assets-eager",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/images/**", "/assets/icons/**"],
+        "urls": [
+          "https://fonts.googleapis.com/css?family=Montserrat|Railway",
+          "https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2"
+        ]
+      }
+    }
+  ],
+  "navigationUrls": [
+    "/**",
+    "/blog/**"
+  ]
+}

@@ -1,0 +1,183 @@
+@use "variables" as v;
+@use 'mixins/media-query' as mq;
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Basic styling */
+body {
+  height: v.$height-body;
+  font: v.$font-weight-base #{v.$font-size-base}/#{v.$base-line-height} v.$font-family-base;
+  color: v.$color-text;
+  background-color: v.$color-background;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: calc(#{v.$spacing-unit} / 2);
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: v.$font-size-small;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: v.$spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: v.$font-weight-base;
+}
+
+/**
+ * Links
+ */
+a {
+  color: v.$color-grey;
+  text-decoration: none;
+
+  &:visited {
+    color: darken(v.$color-grey-dark, 15%);
+  }
+
+  &:hover {
+    color: v.$color-text;
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: v.$color-grey;
+  border-left: 4px solid v.$color-grey-light;
+  padding-left: calc(#{v.$spacing-unit} / 2);
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-size: v.$font-size-code;
+  border-radius: 3px;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+p > code {
+  background: v.$color-light-1;
+}
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(#{v.$width_content-max} - (#{v.$spacing-unit} * 2));
+  max-width: calc(#{v.$width_content-max} - (#{v.$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: v.$spacing-unit;
+  padding-left: v.$spacing-unit;
+  @extend %clearfix;
+
+  @include mq.media-query(mq.$on-laptop) {
+    max-width: -webkit-calc(#{v.$width_content-max} - (#{v.$spacing-unit}));
+    max-width: calc(#{v.$width_content-max} - (#{v.$spacing-unit}));
+    padding-right:  calc(#{v.$spacing-unit} / 2);
+    padding-left:  calc(#{v.$spacing-unit} / 2);
+  }
+}
+
+/**
+ * Clearfix
+ */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/**
+ * Icons
+ */
+.icon {
+  > svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+
+    path {
+      fill: v.$color-grey;
+    }
+  }
+}

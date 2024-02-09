@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <title>Jason Hodges - Dev</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/icons/apple-touch-icon.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/icons/favicon-32x32.png" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/assets/icons/favicon-16x16.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="canonical" href="https://jasonhodges.dev">
+  <meta property="og:site_name" content="Jason Hodges">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jason Hodges">
+  <meta name="og:description" content="Jason Hodges' personal blog on Angular coding">
+  <meta content="@_jasonhodges" name="twitter:creator">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jason Hodges">
+  <meta name="twitter:url" content="https://jasonhodges.dev">
+  <meta name="twitter:description" content="Jason Hodges' personal blog on Angular coding">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128184468-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-128184468-1');
+  </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--  <link rel="manifest" href=".removed/manifest.json">-->
+<!--  <meta name="theme-color" content="#1976d2">-->
+  <script>
+    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <jhd-root class="container"></jhd-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+</html>
