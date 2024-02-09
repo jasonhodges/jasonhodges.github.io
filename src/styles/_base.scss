@@ -1,4 +1,5 @@
-@import "variables";
+@use "variables" as v;
+@use 'mixins/media-query' as mq;
 
 /**
  * Reset some basic elements
@@ -10,14 +11,13 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-@import 'mixins/media-query';
 
 /* Basic styling */
 body {
-  height: $height-body;
-  font: $font-weight-base #{$font-size-base}/#{$base-line-height} $font-family-base;
-  color: $color-text;
-  background-color: $color-background;
+  height: v.$height-body;
+  font: v.$font-weight-base #{v.$font-size-base}/#{v.$base-line-height} v.$font-family-base;
+  color: v.$color-text;
+  background-color: v.$color-background;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc(#{v.$spacing-unit} / 2);
 }
 
 /**
@@ -53,14 +53,14 @@ figure > img {
 }
 
 figcaption {
-  font-size: $font-size-small;
+  font-size: v.$font-size-small;
 }
 
 /**
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: v.$spacing-unit;
 }
 
 li {
@@ -74,22 +74,22 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-base;
+  font-weight: v.$font-weight-base;
 }
 
 /**
  * Links
  */
 a {
-  color: $color-grey;
+  color: v.$color-grey;
   text-decoration: none;
 
   &:visited {
-    color: darken($color-grey-dark, 15%);
+    color: darken(v.$color-grey-dark, 15%);
   }
 
   &:hover {
-    color: $color-text;
+    color: v.$color-text;
     text-decoration: underline;
   }
 }
@@ -98,9 +98,9 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $color-grey;
-  border-left: 4px solid $color-grey-light;
-  padding-left: $spacing-unit / 2;
+  color: v.$color-grey;
+  border-left: 4px solid v.$color-grey-light;
+  padding-left: calc(#{v.$spacing-unit} / 2);
   font-size: 18px;
   letter-spacing: -1px;
   font-style: italic;
@@ -114,7 +114,7 @@ blockquote {
  */
 pre,
 code {
-  font-size: $font-size-code;
+  font-size: v.$font-size-code;
   border-radius: 3px;
 }
 
@@ -123,7 +123,7 @@ code {
 }
 
 p > code {
-  background: $color-light-1;
+  background: v.$color-light-1;
 }
 pre {
   padding: 8px 12px;
@@ -139,19 +139,19 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$width_content-max} - (#{$spacing-unit} * 2));
-  max-width: calc(#{$width_content-max} - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(#{v.$width_content-max} - (#{v.$spacing-unit} * 2));
+  max-width: calc(#{v.$width_content-max} - (#{v.$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
+  padding-right: v.$spacing-unit;
+  padding-left: v.$spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$width_content-max} - (#{$spacing-unit}));
-    max-width: calc(#{$width_content-max} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+  @include mq.media-query(mq.$on-laptop) {
+    max-width: -webkit-calc(#{v.$width_content-max} - (#{v.$spacing-unit}));
+    max-width: calc(#{v.$width_content-max} - (#{v.$spacing-unit}));
+    padding-right:  calc(#{v.$spacing-unit} / 2);
+    padding-left:  calc(#{v.$spacing-unit} / 2);
   }
 }
 
@@ -177,7 +177,7 @@ pre {
     vertical-align: middle;
 
     path {
-      fill: $color-grey;
+      fill: v.$color-grey;
     }
   }
 }

@@ -9,11 +9,8 @@ import { SEOService } from '../../services/seo-service/seoservice.service';
   template: `
     <h1>{{ postTitle }}</h1>
     <markdown [data]="postBody"></markdown>
-
   `,
-  imports: [
-    MarkdownComponent,
-  ],
+  imports: [MarkdownComponent],
 })
 export class PostComponent implements OnInit {
   id: any;
@@ -24,21 +21,23 @@ export class PostComponent implements OnInit {
   urlTitle!: string;
   ogUrl = 'https://jasonhodges.dev';
 
-  constructor(private activatedRoute: ActivatedRoute, private seoService: SEOService) {
-  }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private seoService: SEOService
+  ) {}
 
   ngOnInit() {
     this.activatedRoute.data.subscribe((data) => {
       this.permalink = data['post'].attributes['permalink'];
       this.urlTitle = data['post'].attributes['urlTitle'];
+      this.postTitle = data['post'].attributes['title'];
+      this.postPath = data['post']['path'];
+      this.postBody = data['post']['body'];
       this.seoService.updateDescription(data['post'].attributes['seo__desc']);
       this.seoService.updateKeywords(data['post'].attributes['seo__key']);
       this.seoService.updateTitle(data['post'].attributes['title']);
       this.seoService.updateOgUrl(data['post'].attributes['permalink']);
       // this.seoService.updateOgType(data.post.attributes['type']);
-      this.postPath = data['post']['path'];
-      this.postBody = data['post']['body'];
-      this.postTitle = data['post'].attributes['title'];
     });
   }
 }

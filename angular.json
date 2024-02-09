@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "AngularDefault": {
+    "jasonhodges": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -30,13 +30,22 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/assets/posts"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/plugins/command-line/prism-command-line.js",
+              "node_modules/prismjs/plugins/highlight-keywords/prism-highlight-keywords.min.js",
+              "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.js",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
+              "node_modules/prismjs/components/prism-css.min.js",
+              "node_modules/prismjs/components/prism-diff.min.js",
+              "node_modules/prismjs/components/prism-javascript.min.js",
+              "node_modules/prismjs/components/prism-typescript.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -71,10 +80,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AngularDefault:build:production"
+              "buildTarget": "jasonhodges:build:production"
             },
             "development": {
-              "buildTarget": "AngularDefault:build:development"
+              "buildTarget": "jasonhodges:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +91,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "AngularDefault:build"
+            "buildTarget": "jasonhodges:build"
           }
         },
         "test": {

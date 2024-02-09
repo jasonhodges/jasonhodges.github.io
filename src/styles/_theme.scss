@@ -1,8 +1,7 @@
 @charset "utf-8";
-
-//@import '../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@use 'prism-atom-dark.css';
+@forward 'variables';
+@forward 'base';
+@forward 'material-overrides';
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
-
-@import 'variables';
-@import 'base';
-@import 'material-overrides';

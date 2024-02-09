@@ -1,16 +1,19 @@
 // https://stackoverflow.com/questions/48330535/dynamically-add-meta-description-based-on-route-in-angular
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRouteSnapshot, ResolveFn } from '@angular/router';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SEOService {
   siteUrl = 'https://jasonhodges.dev';
   personalTitle = ' | Jason Hodges';
 
-  constructor(private title: Title, private meta: Meta) {
-  }
+  constructor(
+    private title: Title,
+    private meta: Meta
+  ) {}
 
   updateTitle(title: string) {
     this.title.setTitle(title + this.personalTitle);
@@ -34,5 +37,19 @@ export class SEOService {
   updateKeywords(keywords: string) {
     this.meta.updateTag({ name: 'keywords', content: keywords });
   }
-
 }
+
+export const metaResolver: ResolveFn<any> = (route: ActivatedRouteSnapshot) => {
+  const seoService = inject(SEOService);
+  const routeData = route.data;
+  // this.permalink = data['post'].attributes['permalink'];
+  // this.urlTitle = data['post'].attributes['urlTitle'];
+  // this.postTitle = data['post'].attributes['title'];
+  // this.postPath = data['post']['path'];
+  // this.postBody = data['post']['body'];
+  seoService.updateDescription(routeData['post'].attributes['seo__desc']);
+  seoService.updateKeywords(routeData['post'].attributes['seo__key']);
+  seoService.updateTitle(routeData['post'].attributes['title']);
+  seoService.updateOgUrl(routeData['post'].attributes['permalink']);
+  debugger;
+};
